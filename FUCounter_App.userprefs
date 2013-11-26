@@ -1,17 +1,20 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Gabriele Zingaretti’s mini iPad" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Gabriele's iPad" />
   <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/FUCounter_AppViewController.cs">
     <Files>
-      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="143" Column="4" />
+      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="607" Column="49" />
       <File FileName="FUCounter_App/Info.plist" />
-      <File FileName="FUCounter_App/CaseCount.cs" Line="65" Column="34" />
+      <File FileName="FUCounter_App/CaseCount.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/GraftRecord.cs" Line="1" Column="1" />
-      <File FileName="FUCounter_App/FUCounter_AppViewController.designer.cs" Line="151" Column="3" />
-      <File FileName="FUCounter_App/Main.cs" Line="16" Column="1" />
-      <File FileName="FUCounter_App/EULAViewController.cs" Line="42" Column="15" />
-      <File FileName="FUCounter_App/LoadViewController.cs" Line="62" Column="6" />
+      <File FileName="FUCounter_App/FUCounter_AppViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/Main.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/EULAViewController.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/LoadViewController.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="../../../../../Developer/MonoTouch/Source/mono/mcs/class/corlib/System.Reflection/MonoMethod.cs" Line="528" Column="1" />
+      <File FileName="../../../../../Developer/MonoTouch/Source/mono/mcs/class/corlib/System.Reflection/MonoMethod.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/EditViewController.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/EditViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/EditRecordsView.designer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

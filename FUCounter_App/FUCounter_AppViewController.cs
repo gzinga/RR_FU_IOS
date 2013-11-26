@@ -601,7 +601,14 @@ namespace FUCounter_App
 
 			NSData data = NSData.FromFile (fileName);
 			_mailController.AddAttachmentData(data,"text/plain",MasterRecord.PatientID + ".FU1");
-			this.PresentViewController (_mailController, true, null);
+			try
+			{
+				this.PresentViewController (_mailController, true, null);
+			}
+			catch(Exception e)
+			{
+
+			}
 		}
 
 		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
@@ -618,6 +625,9 @@ namespace FUCounter_App
 			catch (Exception e) {
 
 			}
+
+			//puts master record on edit form
+			//((EditViewController)segue.DestinationViewController).SetMasterRecord(MasterRecord);
 		}
 	}
 }
