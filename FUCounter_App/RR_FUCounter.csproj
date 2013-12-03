@@ -155,6 +155,25 @@
     <BundleResource Include="Resources\ResRob_Logo_Symbol_ColorTrans.png" />
     <BundleResource Include="Resources\Home.jpeg" />
     <BundleResource Include="Resources\email.jpeg" />
+    <BundleResource Include="Resources\Erase_All_01.png" />
+    <BundleResource Include="Resources\Erase_All_02.png" />
+    <BundleResource Include="Resources\Home_01.png" />
+    <BundleResource Include="Resources\Home_02.png" />
+    <BundleResource Include="Resources\Load_01.png" />
+    <BundleResource Include="Resources\Load_02.png" />
+    <BundleResource Include="Resources\Save.png" />
+    <BundleResource Include="Resources\Save_01.png" />
+    <BundleResource Include="Resources\See_FIles_02-19.png" />
+    <BundleResource Include="Resources\See_Files_01.png" />
+    <BundleResource Include="Resources\See_Files_02.png" />
+    <BundleResource Include="Resources\Send_EMail_03.png" />
+    <BundleResource Include="Resources\Send_Email_01.png" />
+    <BundleResource Include="Resources\Send_Email_02.png" />
+    <BundleResource Include="Resources\Trash_01.png" />
+    <BundleResource Include="Resources\Trash_02.png" />
+    <BundleResource Include="Resources\Trash_03.png" />
+    <BundleResource Include="Resources\Trash_04.png" />
+    <BundleResource Include="Resources\iOS7-Series-2_02.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />

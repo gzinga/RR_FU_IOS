@@ -20,6 +20,24 @@ namespace FUCounter_App
 
 		}
 
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+			// loads the ui with last record
+			GraftRecord rec = (GraftRecord) MasterRecord._allRecords [MasterRecord._allRecords.Count - 1];
+			if (rec == null)
+				return;
+			textboxHairCount.Text = rec.HairCount.ToString ();
+			textboxRecordNum.Text = MasterRecord._allRecords.Count.ToString();
+			textboxTerminalHairCount.Text = rec.TerminalHairCount.ToString ();
+			textBoxTxDHairCount.Text = rec.TxdHairCount.ToString ();
+			textboxTxdTerminalHairCount.Text = rec.TxdTerminalHairCount.ToString ();
+			selectorGroupNumber.SelectedSegment = rec.GroupNumber -1;
+			StepRecordControl.MinimumValue = 1;
+			StepRecordControl.MaximumValue = MasterRecord._allRecords.Count;
+			StepRecordControl.Value = StepRecordControl.MaximumValue;
+		}
+
 		public void SetMasterRecord(CaseCount masterRecord)
 		{
 			MasterRecord = masterRecord;
@@ -36,5 +54,24 @@ namespace FUCounter_App
 
 		}
 
+		partial void TextBoxOkay (MonoTouch.Foundation.NSObject sender)
+		{
+
+
+		}
+
+		partial void StepRecordEvent (MonoTouch.Foundation.NSObject sender)
+		{
+
+			GraftRecord rec = (GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1];
+			if (rec == null)
+				return;
+			textboxHairCount.Text = rec.HairCount.ToString ();
+			textboxRecordNum.Text = ((int)StepRecordControl.Value).ToString();
+			textboxTerminalHairCount.Text = rec.TerminalHairCount.ToString ();
+			textBoxTxDHairCount.Text = rec.TxdHairCount.ToString ();
+			textboxTxdTerminalHairCount.Text = rec.TxdTerminalHairCount.ToString ();
+			selectorGroupNumber.SelectedSegment = rec.GroupNumber -1;
+		}
 	}
 }

@@ -16,6 +16,9 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UISegmentedControl selectorGroupNumber { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UIStepper StepRecordControl { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField textboxHairCount { get; set; }
 
 		[Outlet]
@@ -30,6 +33,12 @@ namespace FUCounter_App
 		[Outlet]
 		MonoTouch.UIKit.UITextField textboxTxdTerminalHairCount { get; set; }
 
+		[Action ("StepRecordEvent:")]
+		partial void StepRecordEvent (MonoTouch.Foundation.NSObject sender);
+
+		[Action ("TextBoxOkay:")]
+		partial void TextBoxOkay (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("UndoLast:")]
 		partial void UndoLast (MonoTouch.Foundation.NSObject sender);
 		
@@ -38,6 +47,11 @@ namespace FUCounter_App
 			if (selectorGroupNumber != null) {
 				selectorGroupNumber.Dispose ();
 				selectorGroupNumber = null;
+			}
+
+			if (StepRecordControl != null) {
+				StepRecordControl.Dispose ();
+				StepRecordControl = null;
 			}
 
 			if (textboxHairCount != null) {

@@ -1,25 +1,29 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Gabriele's iPad" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/FUCounter_AppViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/EditViewController.cs">
     <Files>
-      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="607" Column="49" />
+      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="631" Column="5" />
       <File FileName="FUCounter_App/Info.plist" />
-      <File FileName="FUCounter_App/CaseCount.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/CaseCount.cs" Line="97" Column="35" />
       <File FileName="FUCounter_App/GraftRecord.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/FUCounter_AppViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="FUCounter_App/Main.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/Main.cs" Line="16" Column="1" />
       <File FileName="FUCounter_App/EULAViewController.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/LoadViewController.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="../../../../../Developer/MonoTouch/Source/mono/mcs/class/corlib/System.Reflection/MonoMethod.cs" Line="1" Column="1" />
-      <File FileName="FUCounter_App/EditViewController.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/EditViewController.cs" Line="60" Column="4" />
       <File FileName="FUCounter_App/EditViewController.designer.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/EditRecordsView.designer.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/EditRecordsView.cs" Line="10" Column="2" />
+      <File FileName="FUCounter_App/InfoViewController.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/Entitlements.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/FUCounter_AppViewController.cs" line="379" column="1" />
+      <Breakpoint file="/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/FUCounter_AppViewController.cs" line="589" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

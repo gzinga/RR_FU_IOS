@@ -627,7 +627,12 @@ namespace FUCounter_App
 			}
 
 			//puts master record on edit form
-			//((EditViewController)segue.DestinationViewController).SetMasterRecord(MasterRecord);
+			try{
+				((EditViewController)segue.DestinationViewController).SetMasterRecord(MasterRecord);
+			}
+			catch(Exception e) {
+
+			}
 		}
 	}
 }

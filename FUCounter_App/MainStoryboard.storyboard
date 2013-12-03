@@ -101,6 +101,9 @@
                                 <state key="normal" title="OK">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="TextBoxOkay:" destination="kXJ-sH-5W0" eventType="touchUpInside" id="Tku-RH-reU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xrM-nJ-JFy">
                                 <rect key="frame" x="360" y="176" width="38" height="30"/>
@@ -119,10 +122,18 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="0jW-pw-0CE">
+                                <rect key="frame" x="169" y="150" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="StepRecordEvent:" destination="kXJ-sH-5W0" eventType="valueChanged" id="xde-u1-2Uo"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="StepRecordControl" destination="0jW-pw-0CE" id="TQf-Yy-Udm"/>
                         <outlet property="selectorGroupNumber" destination="Zfn-uc-t8P" id="60Q-YF-nJm"/>
                         <outlet property="textBoxTxDHairCount" destination="fWm-Uz-D9I" id="NDi-5j-KGN"/>
                         <outlet property="textboxHairCount" destination="Cpv-a2-r8D" id="Xx9-KG-bb4"/>
@@ -638,9 +649,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.91873986336730151" blue="0.84744913950386935" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.017289807548547132" green="0.0" blue="0.17389181385869568" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Save " image="Save.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Save " image="Save_01.png"/>
                                 <connections>
                                     <action selector="SaveRecords:" destination="2" eventType="touchUpInside" id="bjX-HB-1zD"/>
                                 </connections>
@@ -650,7 +659,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.3177905857693743" green="0.89017917798913038" blue="0.18792760047393886" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.29149254870000002" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Load" image="Open.jpeg">
+                                <state key="normal" title="Load" image="See_Files_02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -663,7 +672,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.29149254870000002" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Clear All" image="ClearAll.jpeg">
+                                <state key="normal" title="Clear All" image="Erase_All_02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -726,9 +735,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mj8-Ud-hBy">
-                                <rect key="frame" x="631" y="211" width="60" height="53"/>
+                                <rect key="frame" x="631" y="208" width="60" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Email" image="email.jpeg">
+                                <state key="normal" title="Email" image="Send_Email_01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -914,10 +923,10 @@ Fax:  (408) 883-6889</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RgN-VK-Rnd">
-                                <rect key="frame" x="589" y="88" width="90" height="89"/>
+                                <rect key="frame" x="594" y="88" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" image="LoadFile.jpeg">
+                                <state key="normal" image="Load_02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -926,10 +935,10 @@ Fax:  (408) 883-6889</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i65-jn-ku7">
-                                <rect key="frame" x="571" y="216" width="127" height="99"/>
+                                <rect key="frame" x="589" y="216" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" image="Trashcan.jpeg"/>
+                                <state key="normal" image="Trash_04.png"/>
                                 <connections>
                                     <action selector="DeleteRecord:" destination="Odq-zl-F83" eventType="touchUpInside" id="bh2-ft-ZC5"/>
                                 </connections>
@@ -939,9 +948,9 @@ Fax:  (408) 883-6889</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qco-Tl-ci0">
-                                <rect key="frame" x="589" y="350" width="90" height="83"/>
+                                <rect key="frame" x="594" y="350" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Home.jpeg">
+                                <state key="normal" title="Button" image="Home_02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -962,15 +971,15 @@ Fax:  (408) 883-6889</string>
         </scene>
     </scenes>
     <resources>
-        <image name="ClearAll.jpeg" width="225" height="225"/>
-        <image name="Home.jpeg" width="204" height="204"/>
-        <image name="LoadFile.jpeg" width="225" height="224"/>
-        <image name="Open.jpeg" width="176" height="176"/>
+        <image name="Erase_All_02.png" width="512" height="512"/>
+        <image name="Home_02.png" width="512" height="512"/>
+        <image name="Load_02.png" width="512" height="512"/>
         <image name="ResRob_Logo_Full_ColorTrans.png" width="882" height="488"/>
         <image name="ResRob_Logo_Symbol_ColorTrans.png" width="257" height="263"/>
-        <image name="Save.jpeg" width="204" height="204"/>
-        <image name="Trashcan.jpeg" width="182" height="146"/>
-        <image name="email.jpeg" width="236" height="213"/>
+        <image name="Save_01.png" width="512" height="512"/>
+        <image name="See_Files_02.png" width="512" height="512"/>
+        <image name="Send_Email_01.png" width="512" height="512"/>
+        <image name="Trash_04.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -978,6 +987,6 @@ Fax:  (408) 883-6889</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="YTU-ge-B88"/>
+        <segue reference="bEV-cl-lzs"/>
     </inferredMetricsTieBreakers>
 </document>
