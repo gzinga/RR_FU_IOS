@@ -657,10 +657,21 @@ namespace FUCounter_App
 		{
 			StepRecordEdit.Enabled = EditSwitchButton.On;
 
-			//
-			StepRecordEdit.MinimumValue = 1;
-			StepRecordEdit.MaximumValue = MasterRecord._allRecords.Count;
-			StepRecordEdit.Value = StepRecordEdit.MaximumValue;
+			if (StepRecordEdit.Enabled == true)
+			{
+				StepRecordEdit.MinimumValue = 1;
+				StepRecordEdit.MaximumValue = MasterRecord._allRecords.Count;
+				StepRecordEdit.Value = StepRecordEdit.MaximumValue;
+				// goes on the last record
+				StepRecordEditClick(null);
+			}
+			else
+			{
+				// goes to the last record and add an empty
+				StepRecordEdit.Value = StepRecordEdit.MaximumValue;
+				StepRecordEditClick(null);
+				NewRecord();
+			}
 
 		}
 
