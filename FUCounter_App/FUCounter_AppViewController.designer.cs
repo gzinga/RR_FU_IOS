@@ -25,6 +25,9 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UISwitch DiscardedSwitch { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UISwitch EditSwitchButton { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField F1A { get; set; }
 
 		[Outlet]
@@ -103,6 +106,9 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UITableView ResultsView { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UIStepper StepRecordEdit { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField TechID { get; set; }
 
 		[Outlet]
@@ -147,6 +153,9 @@ namespace FUCounter_App
 		[Action ("ClearAll:")]
 		partial void ClearAll (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("EditSwitchEvent:")]
+		partial void EditSwitchEvent (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("EmailFile:")]
 		partial void EmailFile (MonoTouch.Foundation.NSObject sender);
 
@@ -165,11 +174,24 @@ namespace FUCounter_App
 		[Action ("SaveRecords:")]
 		partial void SaveRecords (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("StepRecordEditClick:")]
+		partial void StepRecordEditClick (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("TechIDDidEnd:")]
 		partial void TechIDDidEnd (MonoTouch.Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (StepRecordEdit != null) {
+				StepRecordEdit.Dispose ();
+				StepRecordEdit = null;
+			}
+
+			if (EditSwitchButton != null) {
+				EditSwitchButton.Dispose ();
+				EditSwitchButton = null;
+			}
+
 			if (ButtonLoad != null) {
 				ButtonLoad.Dispose ();
 				ButtonLoad = null;

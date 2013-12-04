@@ -37,6 +37,14 @@ namespace FUCounter_App
 			Active = false;
 		}
 
+		private void ComputeInternalStatistics()
+		{
+			// calculates total dx and tx
+			totalHair = FT [0] + 2*FT [1] + 3*FT [2] + 4*FT [3];
+			totalTX = (double)totalTXHair / (double)totalHair;
+			totalTX *= 100;
+		}
+
 		public void AddRecordTop(GraftRecord rec)
 		{
 			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
@@ -45,15 +53,33 @@ namespace FUCounter_App
 			}
 			_allRecords.Add(rec);
 			// calculates FUs
+			totalTXHair += rec.TxdTerminalHairCount;
 			FA [rec.HairCount-1]++;
 			FT [rec.TerminalHairCount-1]++;
-			// calculates total dx and tx
-			totalHair = FT [0] + 2*FT [1] + 3*FT [2] + 4*FT [3];
-			totalTXHair += rec.TxdTerminalHairCount;
-			totalTX = (double)totalTXHair / (double)totalHair;
-			totalTX *= 100;
-			if (rec.Discard == true)
-				totalDX++;
+			ComputeInternalStatistics ();
+
+		}
+
+		public void InsertRecord (int position, GraftRecord rec)
+		{
+			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
+				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
+				return;
+			}
+			_allRecords.Insert (position, rec);
+			_allRecords.RemoveAt (position + 1);
+			// it now has to recompute all hair count
+			FT [0] = FT [1] = FT [2] = FT [3] = totalTXHair = 0;
+			totalDX = 0.0;
+			foreach (object record in _allRecords) 
+			{
+				FA [((GraftRecord)record).HairCount - 1]++;
+				FA [((GraftRecord)record).TerminalHairCount - 1]++;
+				totalTXHair += ((GraftRecord)record).TxdTerminalHairCount;
+				if (((GraftRecord)record).Discard == true)
+					totalDX++;
+			}
+			ComputeInternalStatistics ();
 		}
 
 	}
@@ -96,17 +122,9 @@ namespace FUCounter_App
 			TotalNumberOfGrafts = 0;
 			_allRecords = new ArrayList ();
 		}
-	
-		public void AddRecordTop(GraftRecord rec)
+
+		private void ComputeInternalStatistics(ref GraftRecord rec)
 		{
-			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
-				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
-				return;
-			}
-			((GroupData)AllGroups[rec.GroupNumber-1]).Active = true;
-			//insert the record
-			((GroupData)AllGroups[rec.GroupNumber-1]).AddRecordTop (rec);
-		
 			totalDX = 0;
 			totalHair = 0;
 			totalTXHair = 0;
@@ -123,8 +141,34 @@ namespace FUCounter_App
 			totalTX = (double)totalTXHair / (double)totalHair;
 			totalTX *= 100;
 			TotalNumberOfGrafts++;
+
+		}
+	
+		public void AddRecordTop(GraftRecord rec)
+		{
+			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
+				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
+				return;
+			}
+			((GroupData)AllGroups[rec.GroupNumber-1]).Active = true;
+			//insert the record
+			((GroupData)AllGroups[rec.GroupNumber-1]).AddRecordTop (rec);
+		
+			ComputeInternalStatistics (ref rec);
+
 			int allrecCounts = ((GroupData)AllGroups [rec.GroupNumber - 1])._allRecords.Count;
 			_allRecords.Add(((GroupData)AllGroups[rec.GroupNumber-1])._allRecords[allrecCounts-1]);
+		}
+
+		public void InsertRecord (int position, GraftRecord rec)
+		{
+			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
+				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
+				return;
+			}
+			((GroupData)AllGroups[rec.GroupNumber-1]).InsertRecord(position,rec);
+			ComputeInternalStatistics (ref rec);
+
 		}
 
 		public int GetNumRecords()

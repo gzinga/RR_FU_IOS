@@ -271,15 +271,24 @@ namespace FUCounter_App
 			{
 				LabelTerminalHairCount.BackgroundColor = UIColor.White;
 			}
-				GraftRecord rec = new GraftRecord(Convert.ToInt16(HairCountBox.Text),Convert.ToInt16(TxdHairCountBox.Text),
+			GraftRecord rec = new GraftRecord(Convert.ToInt16(HairCountBox.Text),Convert.ToInt16(TxdHairCountBox.Text),
 			                                   Convert.ToInt16(TerminalHairCountBox.Text),
 			                                   Convert.ToInt16(TxdHairCountBox.Text),DiscardedSwitch.On,
 			                                   GroupNumber.SelectedSegment+1);
-			MasterRecord.AddRecordTop(rec);
-			UpdateFsInformation(rec);
-			SaveRecords(null);
-			UpdateTableView(false);
-			NewRecord();
+			if (EditSwitchButton.On == false)
+			{
+				MasterRecord.AddRecordTop(rec);
+				UpdateFsInformation(rec);
+				SaveRecords(null);
+				UpdateTableView(false);
+				NewRecord();
+			}
+			else
+			{
+				// we are in editing mode
+				//MasterRecord.AddRecordTop
+
+			}
 		}
 
 
@@ -423,6 +432,7 @@ namespace FUCounter_App
 		}
 
 		public string FileToLoad = "";
+
 		public void SetFileToLoad(string fileName)
 		{
 			FileToLoad = fileName;
@@ -628,11 +638,44 @@ namespace FUCounter_App
 
 			//puts master record on edit form
 			try{
-				((EditViewController)segue.DestinationViewController).SetMasterRecord(MasterRecord);
+				((EditViewController)segue.DestinationViewController).SetMasterRecord(ref MasterRecord);
 			}
 			catch(Exception e) {
 
 			}
+		}
+
+
+		public void SetMasterRecord(CaseCount masterRecord)
+		{
+			this.ClearAll(null);
+			MasterRecord = masterRecord;
+			this.ReloadInputViews ();
+		}
+
+		partial void EditSwitchEvent (MonoTouch.Foundation.NSObject sender)
+		{
+			StepRecordEdit.Enabled = EditSwitchButton.On;
+
+			//
+			StepRecordEdit.MinimumValue = 1;
+			StepRecordEdit.MaximumValue = MasterRecord._allRecords.Count;
+			StepRecordEdit.Value = StepRecordEdit.MaximumValue;
+
+		}
+
+		partial void StepRecordEditClick (MonoTouch.Foundation.NSObject sender)
+		{
+			// changes between records
+			GraftRecord rec = (GraftRecord) MasterRecord._allRecords [(int)(StepRecordEdit.Value) - 1];
+			if (rec == null)
+				return;
+			HairCountBox.Text = rec.HairCount.ToString ();
+			RecordBox.Text = ((int)(StepRecordEdit.Value)).ToString();
+			TerminalHairCountBox.Text = rec.TerminalHairCount.ToString ();
+			TxdHairCountBox.Text = rec.TxdHairCount.ToString ();
+			TxdTerminalHairCount.Text = rec.TxdTerminalHairCount.ToString ();
+			GroupNumber.SelectedSegment = rec.GroupNumber -1;
 		}
 	}
 }

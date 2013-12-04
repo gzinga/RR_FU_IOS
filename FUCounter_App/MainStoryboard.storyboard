@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="kXJ-sH-5W0" customClass="EditViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PrJ-NQ-mG4" customClass="EditRecordsView">
-                        <rect key="frame" x="0.0" y="0.0" width="700" height="250"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair Count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N7s-re-Edi">
@@ -123,9 +123,10 @@
                                 </state>
                             </button>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="0jW-pw-0CE">
-                                <rect key="frame" x="169" y="150" width="94" height="29"/>
+                                <rect key="frame" x="169" y="924" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
+                                    <action selector="StepRecord:" destination="kXJ-sH-5W0" eventType="valueChanged" id="hGj-cG-YN9"/>
                                     <action selector="StepRecordEvent:" destination="kXJ-sH-5W0" eventType="valueChanged" id="xde-u1-2Uo"/>
                                 </connections>
                             </stepper>
@@ -647,7 +648,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6ag-6l-JzN">
                                 <rect key="frame" x="703" y="136" width="52" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.91873986336730151" blue="0.84744913950386935" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.017289807548547132" green="0.0" blue="0.17389181385869568" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Save " image="Save_01.png"/>
                                 <connections>
@@ -657,7 +657,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AK9-ma-1Vf">
                                 <rect key="frame" x="703" y="211" width="52" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.3177905857693743" green="0.89017917798913038" blue="0.18792760047393886" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.29149254870000002" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Load" image="See_Files_02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -744,18 +743,27 @@
                                     <action selector="EmailFile:" destination="2" eventType="touchUpInside" id="gTz-QI-7a5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zIj-ua-O3J">
-                                <rect key="frame" x="646" y="336" width="30" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zIj-ua-O3J">
+                                <rect key="frame" x="658" y="349" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Edit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="kXJ-sH-5W0" kind="popover" popoverAnchorView="zIj-ua-O3J" id="OZB-WN-Hry">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="sle-ij-78G">
+                                <rect key="frame" x="654" y="311" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="StepRecordEditClick:" destination="2" eventType="valueChanged" id="zUR-JZ-SN4"/>
+                                </connections>
+                            </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="OIn-2B-SYv">
+                                <rect key="frame" x="697" y="348" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="EditSwitchEvent:" destination="2" eventType="valueChanged" id="P3d-mJ-f9y"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -764,6 +772,7 @@
                         <outlet property="ButtonSave" destination="6ag-6l-JzN" id="2Ce-4b-aXA"/>
                         <outlet property="Discarded" destination="eIF-UU-fLp" id="gO8-Ru-EoH"/>
                         <outlet property="DiscardedSwitch" destination="fep-Ft-nBe" id="DMi-WW-h2H"/>
+                        <outlet property="EditSwitchButton" destination="OIn-2B-SYv" id="Sbo-U9-RBo"/>
                         <outlet property="F1A" destination="oeb-B4-wki" id="SF9-Dp-z0R"/>
                         <outlet property="F1T" destination="XOD-PB-Xii" id="Zrv-gv-cTq"/>
                         <outlet property="F2A" destination="iT3-ee-JVv" id="J7W-mX-w4Z"/>
@@ -790,6 +799,7 @@
                         <outlet property="ProcedureDate" destination="0Ma-Lq-JgG" id="fX7-jk-kqi"/>
                         <outlet property="RecordBox" destination="adK-iT-2hy" id="Q3V-sP-twh"/>
                         <outlet property="ResultsView" destination="QmC-UE-1MA" id="rg3-mp-35H"/>
+                        <outlet property="StepRecordEdit" destination="sle-ij-78G" id="syb-vS-UR1"/>
                         <outlet property="TechID" destination="YUO-Lj-XJg" id="Pjr-SR-45C"/>
                         <outlet property="TerminalHairCountBox" destination="axr-xE-igN" id="46V-sU-HCQ"/>
                         <outlet property="TextBoxProtocol" destination="nNp-gk-F5y" id="fkM-0T-tFT"/>

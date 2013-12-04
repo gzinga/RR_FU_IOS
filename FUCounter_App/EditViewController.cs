@@ -38,7 +38,7 @@ namespace FUCounter_App
 			StepRecordControl.Value = StepRecordControl.MaximumValue;
 		}
 
-		public void SetMasterRecord(CaseCount masterRecord)
+		public void SetMasterRecord(ref CaseCount masterRecord)
 		{
 			MasterRecord = masterRecord;
 		}
@@ -54,9 +54,17 @@ namespace FUCounter_App
 
 		}
 
+		GraftRecord undoRec = null;
 		partial void TextBoxOkay (MonoTouch.Foundation.NSObject sender)
 		{
+			undoRec = (GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1];
+			if (undoRec == null)
+				return;
 
+			((GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1]).TerminalHairCount = Convert.ToInt16(textboxTerminalHairCount.Text);
+			((GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1]).TxdHairCount = Convert.ToInt16(textBoxTxDHairCount.Text);
+			((GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1]).TxdTerminalHairCount = Convert.ToInt16(textboxTxdTerminalHairCount.Text);
+			((GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1]).GroupNumber = Convert.ToInt16(selectorGroupNumber.SelectedSegment)-1;
 
 		}
 
@@ -72,6 +80,24 @@ namespace FUCounter_App
 			textBoxTxDHairCount.Text = rec.TxdHairCount.ToString ();
 			textboxTxdTerminalHairCount.Text = rec.TxdTerminalHairCount.ToString ();
 			selectorGroupNumber.SelectedSegment = rec.GroupNumber -1;
+		}
+
+		public override void ViewDidDisappear(bool animated)
+		{
+			base.ViewDidDisappear (animated);
+		}  
+
+
+		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
+		{
+			base.PrepareForSegue (segue, sender);
+			try{
+				((FUCounter_AppViewController)segue.DestinationViewController).SetMasterRecord(MasterRecord);
+			}
+			catch(Exception e) {
+
+			}
+
 		}
 	}
 }
