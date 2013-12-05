@@ -252,24 +252,27 @@ namespace FUCounter_App
 				alert.Show();
 				return;
 			}
-			if (_workflowCounter == 1)
+			if (EditSwitchButton.On == false)
 			{
-				// this means we have n terminal grafts and they are all not transected
-				TxdHairCountBox.Text = "0";
-				TxdTerminalHairCount.Text = "0";
-				TerminalHairCountBox.Text = HairCountBox.Text;
-				DiscardedSwitch.On = false;
-			}
-			else if (_workflowCounter == 2)
-			{
-				// this means we have n terminal grafts and some are transected
-				TxdTerminalHairCount.Text = TxdHairCountBox.Text;
-				TerminalHairCountBox.Text = HairCountBox.Text;
-				DiscardedSwitch.On = false;
-			}
-			else if (_workflowCounter == 3)
-			{
-				LabelTerminalHairCount.BackgroundColor = UIColor.White;
+				if (_workflowCounter == 1)
+				{
+					// this means we have n terminal grafts and they are all not transected
+					TxdHairCountBox.Text = "0";
+					TxdTerminalHairCount.Text = "0";
+					TerminalHairCountBox.Text = HairCountBox.Text;
+					DiscardedSwitch.On = false;
+				}
+				else if (_workflowCounter == 2)
+				{
+					// this means we have n terminal grafts and some are transected
+					TxdTerminalHairCount.Text = TxdHairCountBox.Text;
+					TerminalHairCountBox.Text = HairCountBox.Text;
+					DiscardedSwitch.On = false;
+				}
+				else if (_workflowCounter == 3)
+				{
+					LabelTerminalHairCount.BackgroundColor = UIColor.White;
+				}
 			}
 			GraftRecord rec = new GraftRecord(Convert.ToInt16(HairCountBox.Text),Convert.ToInt16(TxdHairCountBox.Text),
 			                                   Convert.ToInt16(TerminalHairCountBox.Text),
@@ -286,8 +289,9 @@ namespace FUCounter_App
 			else
 			{
 				// we are in editing mode
-				//MasterRecord.AddRecordTop
-
+				MasterRecord.InsertRecord(Convert.ToInt16(RecordBox.Text)-1,rec);
+				UpdateTableView(false);
+				SaveRecords(null);
 			}
 		}
 
@@ -517,7 +521,7 @@ namespace FUCounter_App
 		partial void SaveFUFile (MonoTouch.Foundation.NSObject sender)
 		{
 			// converts master record into FU file
-			FUCounterDataSet FU1 = new FUCounterDataSet(Convert.ToInt16(RecordBox.Text));
+			FUCounterDataSet FU1 = new FUCounterDataSet(MasterRecord._allRecords.Count);
 			FU1.Subject.MicroscopicNotes = MasterRecord.Notes;
 			FU1.Subject.PatientID = MasterRecord.PatientID;
 			FU1.Subject.ProcedureDate = MasterRecord.Date;

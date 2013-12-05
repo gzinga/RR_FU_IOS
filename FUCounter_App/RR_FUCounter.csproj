@@ -174,6 +174,14 @@
     <BundleResource Include="Resources\Trash_03.png" />
     <BundleResource Include="Resources\Trash_04.png" />
     <BundleResource Include="Resources\iOS7-Series-2_02.png" />
+    <BundleResource Include="Resources\Edit.png" />
+    <BundleResource Include="Resources\Erase_All_03.png" />
+    <BundleResource Include="Resources\Load_Files_03.png" />
+    <BundleResource Include="Resources\Load_Files_04.png" />
+    <BundleResource Include="Resources\See_FIles_03.png" />
+    <BundleResource Include="Resources\See_Files_04.png" />
+    <BundleResource Include="Resources\iOS7-Series-3_30.png" />
+    <BundleResource Include="Resources\iOS7-Series-3_36.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />

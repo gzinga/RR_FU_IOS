@@ -66,15 +66,22 @@ namespace FUCounter_App
 				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
 				return;
 			}
-			_allRecords.Insert (position, rec);
-			_allRecords.RemoveAt (position + 1);
+			//_allRecords.Insert (position, rec);
+			//_allRecords.RemoveAt (position + 1);
+			((GraftRecord)_allRecords [position]).Discard = rec.Discard;
+			((GraftRecord)_allRecords [position]).GroupNumber = rec.GroupNumber;
+			((GraftRecord)_allRecords [position]).HairCount = rec.HairCount;
+			((GraftRecord)_allRecords [position]).TerminalHairCount = rec.TerminalHairCount;
+			((GraftRecord)_allRecords [position]).TxdHairCount = rec.TxdHairCount;
+			((GraftRecord)_allRecords [position]).TxdTerminalHairCount = rec.TxdTerminalHairCount;
 			// it now has to recompute all hair count
 			FT [0] = FT [1] = FT [2] = FT [3] = totalTXHair = 0;
+			FA [0] = FA [1] = FA [2] = FA [3] = 0;
 			totalDX = 0.0;
 			foreach (object record in _allRecords) 
 			{
 				FA [((GraftRecord)record).HairCount - 1]++;
-				FA [((GraftRecord)record).TerminalHairCount - 1]++;
+				FT [((GraftRecord)record).TerminalHairCount - 1]++;
 				totalTXHair += ((GraftRecord)record).TxdTerminalHairCount;
 				if (((GraftRecord)record).Discard == true)
 					totalDX++;
@@ -168,6 +175,17 @@ namespace FUCounter_App
 			}
 			((GroupData)AllGroups[rec.GroupNumber-1]).InsertRecord(position,rec);
 			ComputeInternalStatistics (ref rec);
+			//suboptimal solution
+			_allRecords.Clear ();
+			foreach (object obj in AllGroups) 
+			{
+				GroupData group = (GroupData)obj;
+				foreach (object recObj in group._allRecords) 
+				{
+					GraftRecord rc = (GraftRecord)recObj;
+					_allRecords.Add (rc);
+				}
+			}
 
 		}
 

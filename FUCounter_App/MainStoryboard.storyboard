@@ -646,7 +646,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6ag-6l-JzN">
-                                <rect key="frame" x="703" y="136" width="52" height="57"/>
+                                <rect key="frame" x="710" y="148" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.017289807548547132" green="0.0" blue="0.17389181385869568" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Save " image="Save_01.png"/>
@@ -655,10 +655,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AK9-ma-1Vf">
-                                <rect key="frame" x="703" y="211" width="52" height="53"/>
+                                <rect key="frame" x="703" y="201" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.29149254870000002" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Load" image="See_Files_02.png">
+                                <state key="normal" title="Load" image="See_Files_04.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -667,11 +667,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LV4-fs-Aj2">
-                                <rect key="frame" x="631" y="136" width="60" height="57"/>
+                                <rect key="frame" x="631" y="136" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.29149254870000002" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Clear All" image="Erase_All_02.png">
+                                <state key="normal" title="Clear All" image="Erase_All_03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -736,19 +736,17 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mj8-Ud-hBy">
                                 <rect key="frame" x="631" y="208" width="60" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Email" image="Send_Email_01.png">
+                                <state key="normal" title="Email" image="Send_EMail_03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="EmailFile:" destination="2" eventType="touchUpInside" id="gTz-QI-7a5"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zIj-ua-O3J">
-                                <rect key="frame" x="658" y="349" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zIj-ua-O3J">
+                                <rect key="frame" x="649" y="340" width="50" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Edit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" backgroundImage="Edit.png"/>
                             </button>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="sle-ij-78G">
                                 <rect key="frame" x="654" y="311" width="94" height="29"/>
@@ -936,7 +934,7 @@ Fax:  (408) 883-6889</string>
                                 <rect key="frame" x="594" y="88" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" image="Load_02.png">
+                                <state key="normal" image="Load_Files_04.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -981,14 +979,15 @@ Fax:  (408) 883-6889</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Erase_All_02.png" width="512" height="512"/>
+        <image name="Edit.png" width="512" height="512"/>
+        <image name="Erase_All_03.png" width="512" height="512"/>
         <image name="Home_02.png" width="512" height="512"/>
-        <image name="Load_02.png" width="512" height="512"/>
+        <image name="Load_Files_04.png" width="512" height="512"/>
         <image name="ResRob_Logo_Full_ColorTrans.png" width="882" height="488"/>
         <image name="ResRob_Logo_Symbol_ColorTrans.png" width="257" height="263"/>
         <image name="Save_01.png" width="512" height="512"/>
-        <image name="See_Files_02.png" width="512" height="512"/>
-        <image name="Send_Email_01.png" width="512" height="512"/>
+        <image name="See_Files_04.png" width="512" height="512"/>
+        <image name="Send_EMail_03.png" width="512" height="512"/>
         <image name="Trash_04.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
