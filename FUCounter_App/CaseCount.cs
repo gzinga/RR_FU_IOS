@@ -56,6 +56,7 @@ namespace FUCounter_App
 			totalTXHair += rec.TxdTerminalHairCount;
 			FA [rec.HairCount-1]++;
 			FT [rec.TerminalHairCount-1]++;
+			if (rec.Discard == true) totalDX++;
 			ComputeInternalStatistics ();
 
 		}

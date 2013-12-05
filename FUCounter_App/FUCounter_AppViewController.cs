@@ -690,6 +690,7 @@ namespace FUCounter_App
 			TerminalHairCountBox.Text = rec.TerminalHairCount.ToString ();
 			TxdHairCountBox.Text = rec.TxdHairCount.ToString ();
 			TxdTerminalHairCount.Text = rec.TxdTerminalHairCount.ToString ();
+			DiscardedSwitch.On = rec.Discard;
 			GroupNumber.SelectedSegment = rec.GroupNumber -1;
 		}
 	}
