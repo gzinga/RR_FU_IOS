@@ -7,6 +7,8 @@ using System.Xml;
 using System.IO;
 using MonoTouch.MessageUI;
 using MonoTouch.CoreData;
+using MonoTouch.MediaPlayer;
+using MonoTouch.AudioToolbox;
 
 namespace FUCounter_App
 {
@@ -140,6 +142,24 @@ namespace FUCounter_App
 			_workflowCounter = 1;
 			redFlegEntry = false;
 			LabelHairCount.BackgroundColor = UIColor.Orange;
+			DiscardedSwitch.On = false;
+		}
+
+		private void ResetWorkflow()
+		{
+			HairCountBox.Text = "1";
+			TxdHairCountBox.Text = "0";
+			TerminalHairCountBox.Text = "1";
+			TxdTerminalHairCount.Text = "0";
+			DiscardedSwitch.On = false;
+			_workflowCounter = 1;
+			LabelHairCount.BackgroundColor = UIColor.Orange;
+			DiscardedSwitch.On = false;
+			LabelTerminalHairCount.BackgroundColor = UIColor.White;
+			LabelTxdHairCount.BackgroundColor = UIColor.White;
+			LabelTxdTerminalHairCount.BackgroundColor = UIColor.White;
+			redFlegEntry = false;
+			playRing ();
 		}
 
 		public override bool ShouldAutorotate ()
@@ -264,6 +284,8 @@ namespace FUCounter_App
 					{
 						UIAlertView alert = new UIAlertView ("Entry", "Entry is invalid, you cannot discard a graft with no transections", null, "OK", null);
 						alert.Show();
+						ResetWorkflow();
+						return;
 					}
 					DiscardedSwitch.On = false;
 				}
@@ -276,8 +298,9 @@ namespace FUCounter_App
 					{
 						UIAlertView alert = new UIAlertView ("Entry", "Entry is invalid, you cannot discard a graft were not all hairs are transected", null, "OK", null);
 						alert.Show();
+						ResetWorkflow();
+						return;
 					}
-					DiscardedSwitch.On = false;
 				}
 				else if (_workflowCounter == 3)
 				{
@@ -286,7 +309,8 @@ namespace FUCounter_App
 					{
 						UIAlertView alert = new UIAlertView ("Entry", "Entry is invalid, you cannot discard a graft were not all hairs are transected", null, "OK", null);
 						alert.Show();
-						DiscardedSwitch.On = false;
+						ResetWorkflow();
+						return;
 					}
 				}
 			}
@@ -311,6 +335,12 @@ namespace FUCounter_App
 			}
 		}
 
+
+		private void playRing()
+		{
+			//SystemSound Sound = new SystemSound(;
+			//Sound.PlayAlertSound ();
+		}
 
 		private void RunWorkflow(string txt)
 		{
@@ -617,6 +647,12 @@ namespace FUCounter_App
 
 		partial void EmailFile (MonoTouch.Foundation.NSObject sender)
 		{
+			if(MasterRecord.PatientID == string.Empty) 
+			{
+				UIAlertView alert = new UIAlertView ("Send Email", "Patient ID cannot be empty", null, "OK", null);
+				alert.Show();
+				return;
+			}
 			MFMailComposeViewController _mailController;
 			_mailController = new MFMailComposeViewController ();
 			_mailController.SetToRecipients (new string[]{""});
@@ -699,6 +735,7 @@ namespace FUCounter_App
 		partial void StepRecordEditClick (MonoTouch.Foundation.NSObject sender)
 		{
 			// changes between records
+			if ((int)(StepRecordEdit.Value) == 0) return;
 			GraftRecord rec = (GraftRecord) MasterRecord._allRecords [(int)(StepRecordEdit.Value) - 1];
 			if (rec == null)
 				return;
