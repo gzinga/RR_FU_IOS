@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\Resources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
@@ -182,6 +183,12 @@
     <BundleResource Include="Resources\See_Files_04.png" />
     <BundleResource Include="Resources\iOS7-Series-3_30.png" />
     <BundleResource Include="Resources\iOS7-Series-3_36.png" />
+    <BundleResource Include="Resources\0.png" />
+    <BundleResource Include="Resources\1.png" />
+    <BundleResource Include="Resources\2.png" />
+    <BundleResource Include="Resources\3.png" />
+    <BundleResource Include="Resources\4.png" />
+    <BundleResource Include="Resources\return.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />

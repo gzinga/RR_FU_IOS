@@ -423,11 +423,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="6gY-rt-tfJ">
-                                <rect key="frame" x="453" y="560" width="155" height="145"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="6gY-rt-tfJ">
+                                <rect key="frame" x="483" y="558" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="110"/>
-                                <state key="normal" title="1">
+                                <state key="normal" backgroundImage="1.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -435,11 +435,11 @@
                                     <action selector="Button1Click:" destination="2" eventType="touchUpInside" id="fGv-OI-UY1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="rhU-BZ-C7m">
-                                <rect key="frame" x="567" y="558" width="100" height="152"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="rhU-BZ-C7m">
+                                <rect key="frame" x="571" y="558" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="110"/>
-                                <state key="normal" title="2">
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <state key="normal" backgroundImage="2.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -447,11 +447,11 @@
                                     <action selector="Button2Click:" destination="2" eventType="touchUpInside" id="Ozk-1m-jc7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="R9s-iR-lAj">
-                                <rect key="frame" x="564" y="670" width="106" height="143"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="R9s-iR-lAj">
+                                <rect key="frame" x="571" y="669" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="110"/>
-                                <state key="normal" title="3">
+                                <state key="normal" backgroundImage="3.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -459,11 +459,11 @@
                                     <action selector="Button3Click:" destination="2" eventType="touchUpInside" id="IbN-qT-69t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="H8R-NP-yt0">
-                                <rect key="frame" x="663" y="576" width="70" height="116"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="H8R-NP-yt0">
+                                <rect key="frame" x="662" y="558" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="110"/>
-                                <state key="normal" title="0">
+                                <state key="normal" backgroundImage="0.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -471,14 +471,10 @@
                                     <action selector="Button0Click:" destination="2" eventType="touchUpInside" id="vgk-Fa-jck"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Qdz-FM-EZb">
-                                <rect key="frame" x="481" y="671" width="100" height="142"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Qdz-FM-EZb">
+                                <rect key="frame" x="476" y="669" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="110"/>
-                                <state key="normal" title="4">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" backgroundImage="4.png"/>
                                 <connections>
                                     <action selector="Button4Click:" destination="2" eventType="touchUpInside" id="rpY-us-bda"/>
                                 </connections>
@@ -496,7 +492,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="cQS-pL-hU7">
-                                <rect key="frame" x="475" y="773" width="111" height="145"/>
+                                <rect key="frame" x="517" y="797" width="111" height="145"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="110"/>
                                 <state key="normal" title="6">
@@ -507,11 +503,11 @@
                                     <action selector="Button6Click:" destination="2" eventType="touchUpInside" id="qQ0-Z3-VtB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="6aQ-Fj-Jbg">
-                                <rect key="frame" x="647" y="670" width="101" height="142"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="6aQ-Fj-Jbg">
+                                <rect key="frame" x="662" y="673" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="110"/>
-                                <state key="normal" title="-">
+                                <state key="normal" backgroundImage="return.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -717,7 +713,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResRob_Logo_Symbol_ColorTrans.png" id="LNd-RL-zP8">
-                                <rect key="frame" x="4" y="0.0" width="57" height="56"/>
+                                <rect key="frame" x="605" y="865" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="5YG-0Z-n9q">
@@ -793,6 +789,7 @@
                         <outlet property="LabelTerminalHairCount" destination="tCd-Jm-Ibq" id="HcH-p0-hiL"/>
                         <outlet property="LabelTxdHairCount" destination="hij-Si-1fr" id="9WF-6X-9NU"/>
                         <outlet property="LabelTxdTerminalHairCount" destination="4r7-LW-Tu6" id="DFO-aa-DEj"/>
+                        <outlet property="MicroscopicNotesTextBox" destination="vMn-I8-kH4" id="XwB-T9-I9j"/>
                         <outlet property="PatientID" destination="GG0-8B-Hre" id="jE2-3d-wON"/>
                         <outlet property="ProcedureDate" destination="0Ma-Lq-JgG" id="fX7-jk-kqi"/>
                         <outlet property="RecordBox" destination="adK-iT-2hy" id="Q3V-sP-twh"/>
@@ -882,7 +879,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResRob_Logo_Symbol_ColorTrans.png" id="qqJ-nv-qNx">
-                                <rect key="frame" x="20" y="10" width="90" height="83"/>
+                                <rect key="frame" x="605" y="854" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" editable="NO" id="FPc-eh-euo">
@@ -952,7 +949,7 @@ Fax:  (408) 883-6889</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResRob_Logo_Symbol_ColorTrans.png" id="SRL-rm-NFk">
-                                <rect key="frame" x="0.0" y="0.0" width="72" height="71"/>
+                                <rect key="frame" x="598" y="854" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qco-Tl-ci0">
@@ -979,6 +976,11 @@ Fax:  (408) 883-6889</string>
         </scene>
     </scenes>
     <resources>
+        <image name="0.png" width="512" height="512"/>
+        <image name="1.png" width="512" height="512"/>
+        <image name="2.png" width="512" height="512"/>
+        <image name="3.png" width="512" height="506"/>
+        <image name="4.png" width="512" height="512"/>
         <image name="Edit.png" width="512" height="512"/>
         <image name="Erase_All_03.png" width="512" height="512"/>
         <image name="Home_02.png" width="512" height="512"/>
@@ -989,6 +991,7 @@ Fax:  (408) 883-6889</string>
         <image name="See_Files_04.png" width="512" height="512"/>
         <image name="Send_EMail_03.png" width="512" height="512"/>
         <image name="Trash_04.png" width="512" height="512"/>
+        <image name="return.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

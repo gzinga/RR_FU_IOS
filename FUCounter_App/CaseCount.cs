@@ -148,8 +148,7 @@ namespace FUCounter_App
 			}
 			totalTX = (double)totalTXHair / (double)totalHair;
 			totalTX *= 100;
-			TotalNumberOfGrafts++;
-
+			TotalNumberOfGrafts = _allRecords.Count;
 		}
 	
 		public void AddRecordTop(GraftRecord rec)
@@ -161,11 +160,10 @@ namespace FUCounter_App
 			((GroupData)AllGroups[rec.GroupNumber-1]).Active = true;
 			//insert the record
 			((GroupData)AllGroups[rec.GroupNumber-1]).AddRecordTop (rec);
-		
-			ComputeInternalStatistics (ref rec);
 
 			int allrecCounts = ((GroupData)AllGroups [rec.GroupNumber - 1])._allRecords.Count;
 			_allRecords.Add(((GroupData)AllGroups[rec.GroupNumber-1])._allRecords[allrecCounts-1]);
+			ComputeInternalStatistics (ref rec);
 		}
 
 		public void InsertRecord (int position, GraftRecord rec)
@@ -174,7 +172,14 @@ namespace FUCounter_App
 				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
 				return;
 			}
-			((GroupData)AllGroups[rec.GroupNumber-1]).InsertRecord(position,rec);
+
+			int offsetPosition = 0;
+			for (int i = 0; i < rec.GroupNumber-1; i++) 
+			{
+				offsetPosition += ((GroupData)AllGroups [i])._allRecords.Count;
+			}
+
+			((GroupData)AllGroups[rec.GroupNumber-1]).InsertRecord(position-offsetPosition,rec);
 			ComputeInternalStatistics (ref rec);
 			//suboptimal solution
 			_allRecords.Clear ();

@@ -260,6 +260,11 @@ namespace FUCounter_App
 					TxdHairCountBox.Text = "0";
 					TxdTerminalHairCount.Text = "0";
 					TerminalHairCountBox.Text = HairCountBox.Text;
+					if (DiscardedSwitch.On == true) 
+					{
+						UIAlertView alert = new UIAlertView ("Entry", "Entry is invalid, you cannot discard a graft with no transections", null, "OK", null);
+						alert.Show();
+					}
 					DiscardedSwitch.On = false;
 				}
 				else if (_workflowCounter == 2)
@@ -267,11 +272,22 @@ namespace FUCounter_App
 					// this means we have n terminal grafts and some are transected
 					TxdTerminalHairCount.Text = TxdHairCountBox.Text;
 					TerminalHairCountBox.Text = HairCountBox.Text;
+					if (DiscardedSwitch.On == true && Convert.ToInt16(TerminalHairCountBox.Text) > Convert.ToInt16(TxdTerminalHairCount.Text)) 
+					{
+						UIAlertView alert = new UIAlertView ("Entry", "Entry is invalid, you cannot discard a graft were not all hairs are transected", null, "OK", null);
+						alert.Show();
+					}
 					DiscardedSwitch.On = false;
 				}
 				else if (_workflowCounter == 3)
 				{
 					LabelTerminalHairCount.BackgroundColor = UIColor.White;
+					if (DiscardedSwitch.On == true && Convert.ToInt16(TerminalHairCountBox.Text) > Convert.ToInt16(TxdTerminalHairCount.Text)) 
+					{
+						UIAlertView alert = new UIAlertView ("Entry", "Entry is invalid, you cannot discard a graft were not all hairs are transected", null, "OK", null);
+						alert.Show();
+						DiscardedSwitch.On = false;
+					}
 				}
 			}
 			GraftRecord rec = new GraftRecord(Convert.ToInt16(HairCountBox.Text),Convert.ToInt16(TxdHairCountBox.Text),
@@ -366,7 +382,7 @@ namespace FUCounter_App
 
 		partial void Button0Click (MonoTouch.Foundation.NSObject sender)
 		{
-			RunWorkflow(Key0.TitleLabel.Text);
+			RunWorkflow("0");
 
 		}
 
@@ -374,19 +390,19 @@ namespace FUCounter_App
 		partial void Button1Click (MonoTouch.Foundation.NSObject sender)
 		{
 
-			RunWorkflow(Key1.TitleLabel.Text);
+			RunWorkflow("1");
 		}
 
 
 		partial void Button2Click (MonoTouch.Foundation.NSObject sender)
 		{
 
-			RunWorkflow(Key2.TitleLabel.Text);
+			RunWorkflow("2");
 		}
 
 		partial void Button3Click (MonoTouch.Foundation.NSObject sender)
 		{
-			RunWorkflow(Key3.TitleLabel.Text);
+			RunWorkflow("3");
 
 		}
 
@@ -394,7 +410,7 @@ namespace FUCounter_App
 		partial void Button4Click (MonoTouch.Foundation.NSObject sender)
 		{
 
-			RunWorkflow(Key4.TitleLabel.Text);
+			RunWorkflow("4");
 
 		}
 
@@ -402,14 +418,14 @@ namespace FUCounter_App
 		partial void Button5Click (MonoTouch.Foundation.NSObject sender)
 		{
 
-			RunWorkflow(Key5.TitleLabel.Text);
+			RunWorkflow("5");
 		}
 
 
 		partial void Button6Click (MonoTouch.Foundation.NSObject sender)
 		{
 
-			RunWorkflow(Key6.TitleLabel.Text);
+			RunWorkflow("6");
 		}
 
 
@@ -422,7 +438,7 @@ namespace FUCounter_App
 				return;
 			}
 
-
+			MasterRecord.Notes = MicroscopicNotesTextBox.Text;
 
 			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
@@ -470,6 +486,7 @@ namespace FUCounter_App
 			PatientID.Text = MasterRecord.PatientID;
 			ProcedureDate.Text = MasterRecord.Date.ToString();
 			TechID.Text = MasterRecord.TechID;
+			MicroscopicNotesTextBox.Text = MasterRecord.Notes;
 			//TextBoxProtocol.Text = MasterRecord.
 
 			//Update FSCount

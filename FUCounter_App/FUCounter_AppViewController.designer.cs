@@ -94,6 +94,9 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UILabel LabelTxdTerminalHairCount { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UITextView MicroscopicNotesTextBox { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField PatientID { get; set; }
 
 		[Outlet]
@@ -182,14 +185,9 @@ namespace FUCounter_App
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (StepRecordEdit != null) {
-				StepRecordEdit.Dispose ();
-				StepRecordEdit = null;
-			}
-
-			if (EditSwitchButton != null) {
-				EditSwitchButton.Dispose ();
-				EditSwitchButton = null;
+			if (MicroscopicNotesTextBox != null) {
+				MicroscopicNotesTextBox.Dispose ();
+				MicroscopicNotesTextBox = null;
 			}
 
 			if (ButtonLoad != null) {
@@ -210,6 +208,11 @@ namespace FUCounter_App
 			if (DiscardedSwitch != null) {
 				DiscardedSwitch.Dispose ();
 				DiscardedSwitch = null;
+			}
+
+			if (EditSwitchButton != null) {
+				EditSwitchButton.Dispose ();
+				EditSwitchButton = null;
 			}
 
 			if (F1A != null) {
@@ -340,6 +343,11 @@ namespace FUCounter_App
 			if (ResultsView != null) {
 				ResultsView.Dispose ();
 				ResultsView = null;
+			}
+
+			if (StepRecordEdit != null) {
+				StepRecordEdit.Dispose ();
+				StepRecordEdit = null;
 			}
 
 			if (TechID != null) {
