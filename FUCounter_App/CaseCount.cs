@@ -41,21 +41,24 @@ namespace FUCounter_App
 		{
 			// calculates total dx and tx
 			totalHair = FT [0] + 2*FT [1] + 3*FT [2] + 4*FT [3];
-			totalTX = (double)totalTXHair / (double)totalHair;
+			if (totalHair > 0)
+				totalTX = (double)totalTXHair / (double)totalHair;
+			else
+				totalTX = 0.0;
 			totalTX *= 100;
 		}
 
 		public void AddRecordTop(GraftRecord rec)
 		{
 			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
-				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
-				return;
+				//new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
+				//return;
 			}
 			_allRecords.Add(rec);
 			// calculates FUs
 			totalTXHair += rec.TxdTerminalHairCount;
-			FA [rec.HairCount-1]++;
-			FT [rec.TerminalHairCount-1]++;
+			if (rec.HairCount>0 && rec.Discard == false) FA [rec.HairCount-1]++;
+			if (rec.TerminalHairCount>0) FT [rec.TerminalHairCount-1]++;
 			if (rec.Discard == true) totalDX++;
 			ComputeInternalStatistics ();
 
@@ -137,8 +140,8 @@ namespace FUCounter_App
 			totalHair = 0;
 			totalTXHair = 0;
 			// calculates FUs
-			TFA[rec.HairCount-1]++;
-			TFT[rec.TerminalHairCount-1]++;
+			if (rec.HairCount>0 && rec.Discard == false) TFA[rec.HairCount-1]++;
+			if (rec.TerminalHairCount>0) TFT[rec.TerminalHairCount-1]++;
 			foreach (object obj in AllGroups) 
 			{
 				GroupData group = (GroupData)obj;
@@ -146,7 +149,10 @@ namespace FUCounter_App
 				totalTXHair += group.totalTXHair;
 				totalDX += group.totalDX;
 			}
-			totalTX = (double)totalTXHair / (double)totalHair;
+			if (totalHair > 0)
+				totalTX = (double)totalTXHair / (double)totalHair;
+			else
+				totalTX = 0.0;
 			totalTX *= 100;
 			TotalNumberOfGrafts = _allRecords.Count;
 		}
@@ -154,8 +160,8 @@ namespace FUCounter_App
 		public void AddRecordTop(GraftRecord rec)
 		{
 			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
-				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
-				return;
+				//	new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
+				//return;
 			}
 			((GroupData)AllGroups[rec.GroupNumber-1]).Active = true;
 			//insert the record

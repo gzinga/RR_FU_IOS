@@ -142,6 +142,10 @@ namespace FUCounter_App
 			_workflowCounter = 1;
 			redFlegEntry = false;
 			LabelHairCount.BackgroundColor = UIColor.Orange;
+			LabelTxdHairCount.BackgroundColor = UIColor.White;
+			LabelTerminalHairCount.BackgroundColor = UIColor.White;
+			LabelTxdTerminalHairCount.BackgroundColor = UIColor.White;
+
 			DiscardedSwitch.On = false;
 		}
 
@@ -280,7 +284,7 @@ namespace FUCounter_App
 					TxdHairCountBox.Text = "0";
 					TxdTerminalHairCount.Text = "0";
 					TerminalHairCountBox.Text = HairCountBox.Text;
-					if (DiscardedSwitch.On == true) 
+					if (DiscardedSwitch.On == true && (Convert.ToInt16(TxdHairCountBox.Text) == 0 || Convert.ToInt16(TxdTerminalHairCount.Text) == 0))
 					{
 						UIAlertView alert = new UIAlertView ("Entry", "Entry is invalid, you cannot discard a graft with no transections", null, "OK", null);
 						alert.Show();
