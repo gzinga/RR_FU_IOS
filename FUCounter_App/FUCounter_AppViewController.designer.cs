@@ -156,6 +156,9 @@ namespace FUCounter_App
 		[Action ("ClearAll:")]
 		partial void ClearAll (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("DiscardButtonClick:")]
+		partial void DiscardButtonClick (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("EditSwitchEvent:")]
 		partial void EditSwitchEvent (MonoTouch.Foundation.NSObject sender);
 
@@ -185,11 +188,6 @@ namespace FUCounter_App
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (MicroscopicNotesTextBox != null) {
-				MicroscopicNotesTextBox.Dispose ();
-				MicroscopicNotesTextBox = null;
-			}
-
 			if (ButtonLoad != null) {
 				ButtonLoad.Dispose ();
 				ButtonLoad = null;
@@ -323,6 +321,11 @@ namespace FUCounter_App
 			if (LabelTxdTerminalHairCount != null) {
 				LabelTxdTerminalHairCount.Dispose ();
 				LabelTxdTerminalHairCount = null;
+			}
+
+			if (MicroscopicNotesTextBox != null) {
+				MicroscopicNotesTextBox.Dispose ();
+				MicroscopicNotesTextBox = null;
 			}
 
 			if (PatientID != null) {

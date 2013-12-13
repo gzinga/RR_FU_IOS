@@ -84,10 +84,11 @@ namespace FUCounter_App
 			totalDX = 0.0;
 			foreach (object record in _allRecords) 
 			{
-				FA [((GraftRecord)record).HairCount - 1]++;
-				FT [((GraftRecord)record).TerminalHairCount - 1]++;
-				totalTXHair += ((GraftRecord)record).TxdTerminalHairCount;
-				if (((GraftRecord)record).Discard == true)
+				GraftRecord objRec = (GraftRecord)record;
+				if (objRec.HairCount>0 && rec.Discard == false) FA [objRec.HairCount - 1]++;
+				if (objRec.TerminalHairCount>0) FT [objRec.TerminalHairCount - 1]++;
+				totalTXHair += objRec.TxdTerminalHairCount;
+				if (objRec.Discard == true)
 					totalDX++;
 			}
 			ComputeInternalStatistics ();

@@ -16,11 +16,13 @@ namespace FUCounter_App
 		protected string[] tableItems;
 		protected string cellIdentifier = "TableCell";
 		public int lastSelectedRow;
-
+		public delegate void RowSelectedDelegate (int raw);
+		public RowSelectedDelegate RowSelectedCallback;
 		public TableSource (string[] items)
 		{
 			tableItems = items;
 			lastSelectedRow = -1;
+			RowSelectedCallback = null;
 		}
 		public override int RowsInSection (UITableView tableview, int section)
 		{
@@ -40,8 +42,9 @@ namespace FUCounter_App
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
 			lastSelectedRow = indexPath.Row;
-			//new UIAlertView("Row Selected", tableItems[indexPath.Row], null, "OK", null).Show();
-			//tableView.DeselectRow (indexPath, true); // iOS convention is to remove the highlight
+			if (RowSelectedCallback != null)
+				RowSelectedCallback (lastSelectedRow);
+	
 		}
 		public int GetLastSelectedRow()
 		{
@@ -267,6 +270,11 @@ namespace FUCounter_App
 			TotalTransectedHairs.Text = MasterRecord.totalTXHair.ToString();
 		}
 
+		partial void DiscardButtonClick (MonoTouch.Foundation.NSObject sender)
+		{
+			DiscardedSwitch.On = true;
+			KeyEnterTouch(null);
+		}
 
 		partial void KeyEnterTouch (MonoTouch.Foundation.NSObject sender)
 		{

@@ -35,7 +35,7 @@ namespace FUCounter_App
 			String[] tableItems1 = (String[]) tableList.ToArray( typeof( string ) );
 			TableListFiles.Source = new TableSource (tableItems1);
 			TableListFiles.ReloadData ();
-
+			((TableSource)TableListFiles.Source).RowSelectedCallback = RowSelected;
 		}
 
 
@@ -60,6 +60,41 @@ namespace FUCounter_App
 			}
 			FileToLoad = doc + "/" + (source.GetAllRows())[selectedRow];
 			//this.DismissViewController(true,null);
+		}
+
+
+		public void RowSelected(int rowNum)
+		{
+			LoadSelectedRecord (null);
+			LoadFile ();
+		}
+
+		public void LoadFile()
+		{
+			if (FileToLoad == null || FileToLoad == ".xml") {
+					return;
+			}
+			if (FileToLoad == string.Empty) {
+				UIAlertView alert = new UIAlertView ("File Load", "You did not select a file to load", null, "OK", null);
+				alert.Show();
+				return;
+			}
+			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
+			System.Xml.Serialization.XmlSerializer reader = 
+				new System.Xml.Serialization.XmlSerializer(typeof(CaseCount),extraTypes);
+
+			System.IO.StreamReader file = new System.IO.StreamReader(FileToLoad);
+			CaseCount MasterRecord = (CaseCount)reader.Deserialize(file);
+			file.Close();
+
+			// update UI
+			LabelPatientID.Text = string.Format ("Patiend ID: {0}", MasterRecord.PatientID);
+			LabelDXRate.Text = string.Format("Total Discard Rate: {0:0.0}" , 100.0*(double)MasterRecord.totalDX/(double)MasterRecord.TotalNumberOfGrafts);
+			LabelNumGrafts.Text = string.Format ("Total Number of Grafts: {0}", MasterRecord.TotalNumberOfGrafts);
+			LabelTXRate.Text = string.Format ("Total Transection Rate: {0:0.0}" , MasterRecord.totalTX);
+			LabelProcedureDate.Text = "Procedure Date: " + MasterRecord.Date;
+			//TextBoxProtocol.Text = MasterRecord.
+
 		}
 
 		partial void GoHome (MonoTouch.Foundation.NSObject sender)

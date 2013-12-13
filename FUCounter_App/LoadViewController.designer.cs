@@ -13,6 +13,21 @@ namespace FUCounter_App
 	partial class LoadViewController
 	{
 		[Outlet]
+		MonoTouch.UIKit.UILabel LabelDXRate { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel LabelNumGrafts { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel LabelPatientID { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel LabelProcedureDate { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel LabelTXRate { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITableView TableListFiles { get; set; }
 
 		[Action ("DeleteRecord:")]
@@ -29,6 +44,31 @@ namespace FUCounter_App
 			if (TableListFiles != null) {
 				TableListFiles.Dispose ();
 				TableListFiles = null;
+			}
+
+			if (LabelPatientID != null) {
+				LabelPatientID.Dispose ();
+				LabelPatientID = null;
+			}
+
+			if (LabelNumGrafts != null) {
+				LabelNumGrafts.Dispose ();
+				LabelNumGrafts = null;
+			}
+
+			if (LabelTXRate != null) {
+				LabelTXRate.Dispose ();
+				LabelTXRate = null;
+			}
+
+			if (LabelDXRate != null) {
+				LabelDXRate.Dispose ();
+				LabelDXRate = null;
+			}
+
+			if (LabelProcedureDate != null) {
+				LabelProcedureDate.Dispose ();
+				LabelProcedureDate = null;
 			}
 		}
 	}
