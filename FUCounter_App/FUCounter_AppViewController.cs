@@ -266,6 +266,7 @@ namespace FUCounter_App
 				break;
 			}
 
+			TextBoxTotalImplantable.Text = Convert.ToString(MasterRecord.TFT [0] + MasterRecord.TFT [1] + MasterRecord.TFT [2] + MasterRecord.TFT [3]);
 			TotalTerminalHairs.Text = MasterRecord.totalHair.ToString();
 			TotalTransectedHairs.Text = MasterRecord.totalTXHair.ToString();
 		}
@@ -529,6 +530,7 @@ namespace FUCounter_App
 			ProcedureDate.Text = MasterRecord.Date.ToString();
 			TechID.Text = MasterRecord.TechID;
 			MicroscopicNotesTextBox.Text = MasterRecord.Notes;
+			GroupNumber.SelectedSegment = ((GraftRecord)(MasterRecord._allRecords [MasterRecord._allRecords.Count - 1])).GroupNumber-1;
 			//TextBoxProtocol.Text = MasterRecord.
 
 			//Update FSCount
@@ -543,6 +545,7 @@ namespace FUCounter_App
 			F3A.Text = Convert.ToString(MasterRecord.TFA[2]);
 			F4A.Text = Convert.ToString(MasterRecord.TFA[3]);
 
+			TextBoxTotalImplantable.Text = Convert.ToString(MasterRecord.TFT [0] + MasterRecord.TFT [1] + MasterRecord.TFT [2] + MasterRecord.TFT [3]);
 			TotalTerminalHairs.Text = MasterRecord.totalHair.ToString();
 			TotalTransectedHairs.Text = MasterRecord.totalTXHair.ToString();
 		}

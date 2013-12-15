@@ -247,29 +247,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="7aT-0h-Xxn">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="7aT-0h-Xxn">
                                 <rect key="frame" x="181" y="304" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xjZ-BS-1yj">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xjZ-BS-1yj">
                                 <rect key="frame" x="495" y="302" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="axr-xE-igN">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="axr-xE-igN">
                                 <rect key="frame" x="181" y="342" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6pi-vB-rfG">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6pi-vB-rfG">
                                 <rect key="frame" x="495" y="342" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="eIF-UU-fLp">
                                 <rect key="frame" x="658" y="901" width="97" height="30"/>
@@ -300,19 +300,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mgV-gQ-Gnn">
-                                <rect key="frame" x="317" y="472" width="20" height="21"/>
+                                <rect key="frame" x="301" y="472" width="20" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sLv-9t-i0S">
-                                <rect key="frame" x="446" y="472" width="20" height="21"/>
+                                <rect key="frame" x="407" y="472" width="20" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F4+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SHj-8N-7tD">
-                                <rect key="frame" x="581" y="472" width="30" height="21"/>
+                                <rect key="frame" x="517" y="472" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -324,19 +324,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8lC-1D-GK1">
-                                <rect key="frame" x="316" y="526" width="20" height="21"/>
+                                <rect key="frame" x="300" y="526" width="20" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RpD-QC-pE7">
-                                <rect key="frame" x="445" y="526" width="20" height="21"/>
+                                <rect key="frame" x="406" y="526" width="20" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F4+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VHO-Y1-Hg4">
-                                <rect key="frame" x="581" y="526" width="30" height="21"/>
+                                <rect key="frame" x="517" y="526" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -351,7 +351,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="QBh-El-OPR">
-                                <rect key="frame" x="341" y="468" width="60" height="30"/>
+                                <rect key="frame" x="325" y="468" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -360,7 +360,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="IDU-US-huZ">
-                                <rect key="frame" x="469" y="469" width="60" height="30"/>
+                                <rect key="frame" x="430" y="469" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -369,7 +369,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="S85-NG-GB9">
-                                <rect key="frame" x="611" y="468" width="60" height="30"/>
+                                <rect key="frame" x="547" y="468" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -388,7 +388,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="iT3-ee-JVv">
-                                <rect key="frame" x="340" y="522" width="60" height="30"/>
+                                <rect key="frame" x="324" y="522" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -397,7 +397,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="3Yv-GR-dzY">
-                                <rect key="frame" x="468" y="523" width="60" height="30"/>
+                                <rect key="frame" x="429" y="523" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -406,7 +406,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="YXd-Po-9MU">
-                                <rect key="frame" x="610" y="522" width="60" height="30"/>
+                                <rect key="frame" x="546" y="522" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -687,13 +687,13 @@
                                     <action selector="SaveFUFile:" destination="2" eventType="touchUpInside" id="Fgd-YE-HrR"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="OIJ-9V-1NH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="OIJ-9V-1NH">
                                 <rect key="frame" x="218" y="386" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xoe-Un-xS4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xoe-Un-xS4">
                                 <rect key="frame" x="218" y="425" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -768,6 +768,18 @@
                                     <action selector="DiscardButtonClick:" destination="2" eventType="touchUpInside" id="I3Q-h9-oKE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ufZ-6x-7xv">
+                                <rect key="frame" x="670" y="522" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TxE-mY-RXY">
+                                <rect key="frame" x="616" y="526" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -808,6 +820,7 @@
                         <outlet property="TechID" destination="YUO-Lj-XJg" id="Pjr-SR-45C"/>
                         <outlet property="TerminalHairCountBox" destination="axr-xE-igN" id="46V-sU-HCQ"/>
                         <outlet property="TextBoxProtocol" destination="nNp-gk-F5y" id="fkM-0T-tFT"/>
+                        <outlet property="TextBoxTotalImplantable" destination="ufZ-6x-7xv" id="a0b-UF-HQ3"/>
                         <outlet property="TotalTerminalHairs" destination="OIJ-9V-1NH" id="Mip-Cb-TTE"/>
                         <outlet property="TotalTransectedHairs" destination="xoe-Un-xS4" id="u0b-i9-vp5"/>
                         <outlet property="TxdHairCountBox" destination="xjZ-BS-1yj" id="34a-1O-05g"/>
@@ -827,7 +840,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MCU-gl-vKB">
-                                <rect key="frame" x="268" y="698" width="40" height="30"/>
+                                <rect key="frame" x="268" y="967" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Agree">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -838,7 +851,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rPr-4V-N4Z">
-                                <rect key="frame" x="423" y="698" width="69" height="30"/>
+                                <rect key="frame" x="423" y="967" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Not Agree">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -847,16 +860,104 @@
                                     <action selector="NotAgreeAction:" destination="i5s-6S-DPK" eventType="touchUpInside" id="DCj-uC-hEB"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="DMj-lB-0lT">
-                                <rect key="frame" x="20" y="130" width="728" height="543"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="DMj-lB-0lT">
+                                <rect key="frame" x="29" y="104" width="728" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">RERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERE</string>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">RESTORATION ROBOTICS LICENSED APPLICATION END USER LICENSE AGREEMENT (“EULA”)
+
+This EULA is between Restoration Robotics, Inc., a Delaware corporation with a principal address at 128 Baytech Drive, San Jose, California 95134 (“Company” or “Restoration Robotics”), and the company or individual using the Licensed Application described herein (“Licensee”).  The Effective Date of this EULA shall be the date on which the Licensed Application is first downloaded by Licensee.
+
+BY USING, RUNNING, OR ACCESSING THE LICENSED APPLICATION REFERENCED IN AND ACCOMPANYING THIS EULA, YOU ACCEPT AND AGREE TO THE FOLLOWING TERMS AND CONDITIONS CONTAINED HEREIN.  IF YOU DO NOT ACCEPT THESE TERMS, THEN IMMEDIATELY CEASE THE USE OF THE LICENSED APPLICATION  AND NOTIFY COMPANY.
+
+1.	DEFINITIONS
+
+1.1	The following terms, when used in this EULA shall have the following meanings:
+
+“Documentation” means the specifications, documentation or manuals for the Licensed Application which may be made available by Company to its Licensed Application licensees, whether in written or electronic form.
+
+“Licensed Application” refers to the mobile application downloaded by Licensee with this EULA and includes any subsequent modifications, replacements, bug fixes or upgrades thereof.    
+
+ “System” refers to Company’s ARTAS™ System and durable components thereof purchased, including but not limited to hardware, software, and firmware, or otherwise provided under agreement with Company or a distributor of Company, as applicable, by the Licensee.
+
+2.	APPLICATION LICENSE
+
+2.1	License Grant.  Subject to the terms and conditions of this EULA, Company grants to Licensee a non-exclusive, non-transferable, fully-revocable, limited license, to use the Licensed Application, solely on smartphone and tablet devices owned or controlled by Licensee, subject to the following:
+
+a.	Licensee shall use the Licensed Application only in combination with the System.
+
+b.	Licensee shall use the Licensed Application only in accordance with Company instructions and Documentation in effect from time to time, or as otherwise expressly approved by Company in writing.
+
+2.2	Licensee Limitations.  Licensee will not:
+
+a.	copy, display, transfer, adapt, modify or distribute the Licensed Application, electronically or otherwise, except as expressly permitted in Section 2.1 of this EULA;
+
+b.	reverse assemble, reverse compile, reverse engineer, decompile, disassemble, copy, modify, remove, alter, change, create derivative works from, tamper or otherwise translate the Licensed Application except that this limitation will not apply to the extent that such restriction is expressly prohibited by law, and Licensee shall have no right to obtain source code for any Licensed Application;
+
+c.	transfer, distribute, sell, resell, loan, rent, lease, sublease, license, sub-license or assign the Licensed Application or the license granted by this EULA or otherwise offer the Licensed Application for use on a service bureau or outsourced basis; or
+
+d.	remove any copyright, trademark or other proprietary notices and/or legends of Company or its suppliers or resellers affixed to or displayed on the Licensed Application or Documentation.
+
+2.3	No Implied License.  Licensee acknowledges and agrees that this EULA in no way shall be construed to provide to Licensee, or any third party, any express or implied license to use, copy or otherwise exploit the Licensed Application or any portion thereof, (including any intellectual property embodied therein) except as expressly set forth in Section 2.1, and Company reserves all rights not expressly granted.  No rights in any intellectual property are provided except those expressly granted hereunder.
+
+2.4	Third Party Software.  The Licensed Application licensed pursuant to this EULA may be accompanied by certain so-called “open source” software and other third party software applications or portions of applications, including, without limitation, interfaces, functions, and class definitions (“Third Party Software”), which are provided concurrently with the Licensed Application but which are subject to separate terms and conditions (“Third Party Terms”).  Licensee agrees to comply with all obligations imposed on Company by a third party, including without limitation Third Party Terms, with respect to Third Party Software.  COMPANY DISCLAIMS ANY AND ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, TITLE, NON-INFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE WITH RESPECT TO THE THIRD PARTY SOFTWARE.
+
+2.5	Consent to Use of Data.  Licensee agrees that Company may collect and use technical data and related information, including but not limited to technical information about Licensee’s device, system and application software, and peripherals, which is gathered periodically to facilitate the provision of software updates, product support and other services to Licensee related to the Licensed Application. Company may use this information, as long as it is in a form that does not personally identify Licensee, to improve its products or to provide services or technologies to Licensee.
+
+2.6	Services. The Licensed Application may enable access to Company’s services and web sites (collectively and individually, "Services"). Use of the Services may require Internet access and that Licensee accept additional terms of service.
+
+a.	Licensee agrees that any Services contain proprietary content, information and material that is protected by applicable intellectual property and other laws, including but not limited to copyright, and that Licensee will not use such proprietary content, information or materials in any way whatsoever except for permitted use of the Services. No portion of the Services may be reproduced in any form or by any means. Licensee agrees not to modify, rent, lease, loan, sell, distribute, or create derivative works based on the Services, in any manner, and Licensee shall not exploit the Services in any unauthorized way whatsoever, including but not limited to, by trespass or burdening network capacity.
+
+b.	In addition, third party Services that may be accessed from, displayed on, or linked to mobile devices are not available in all languages or in all countries. The Company makes no representation that such Services are appropriate or available for use in any particular location. To the extent Licensee chooses to access such Services, Licensee does so at its own initiative and is responsible for compliance with any applicable laws, including but not limited to applicable local laws. The Company reserves the right to change, suspend, remove, or disable access to any Services at any time without notice. In no event will the Company be liable for the removal of or disabling of access to any such Services. The Company may also impose limits on the use of or access to certain Services, in any case and without notice or liability.
+
+3.	OWNERSHIP
+
+3.1	Company’s Ownership Rights.  Except for the licenses granted hereunder, all rights, title and interests, including, but not limited to, all worldwide patent, copyright, trademark, trade secret and any other rights in and to the System, Documentation and the Licensed Application are retained by Company and its licensors. Licensee agrees that it shall not do, or cause to be done, any acts or things contesting or in any way impairing or tending to impair any portion of the right, title and interest of Company or its licensors in and to such intellectual property rights.
+
+Company is the owner of the ARTAS™ trademark and other trademarks and logos in the U.S. and around the world. Licensee shall not use the trademarks, logos, images or name of Company in any advertising or other form of publicity without the written permission of Company.  Licensee acknowledges that it does not have, and shall not acquire by virtue of this EULA, any rights to or under any goodwill, trademark, trade name, logo, copyright, patent, know-how or any other intellectual property right of Company, nor in any of Company’s trademarks or trade names displayed or appearing on the Licensed Application, the System, the Documentation, or the labels, user manuals, or packaging materials associated with the System and any of its components.  
+
+4.	DISCLAIMER; LIMITATION OF LIABILITY
+
+4.1	TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED APPLICATION IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND RESTORATION ROBOTICS DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, WRITTEN OR ORAL, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING, USAGE OF TRADE OR OTHERWISE. FURTHERMORE, RESTORATION ROBOTICS DOES NOT WARRANT THAT THE OPERATION OF THE LICENSED APPLICATION SHALL BE UNINTERRUPTED OR ERROR FREE. 
+
+4.2	IN NO EVENT WILL RESTORATION ROBOTICS BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOST PROFITS OR REVENUE, LOST SAVINGS, LOSS OF DATA, LOSS OF USE, LOST BUSINESS OPPORTUNITIES OR OTHER ECONOMIC ADVANTAGE, OR LOSS OF GOODWILL), ARISING OUT OF, RELATING TO, OR IN CONNECTION WITH THIS AGREEMENT, OR PERFORMANCE, USE OR INABILITY TO USE THE LICENSED APPLICATION, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON CONTRACT, WARRANTY, TORT, PRODUCT LIABILITY OR OTHERWISE, EVEN IF RESTORATION ROBOTICS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE. SOME JURISDICTIONS MAY NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, TO THE EXTENT PROHIBITED BY LAW SUCH EXCLUSIONS SET FORTH HEREIN MAY NOT APPLY TO LICENSEE. RESTORATION ROBOTICS DISCLAIMS ANY RESPONSIBILITY AND LICENSEE SHALL INDEMNIFY AND HOLD RESTORATION ROBOTICS HARMLESS FROM AND AGAINST ANY EXPENSE, LOSS OR LIABILITY RESULTING FROM THIRD PARTY CLAIMS IN CONNECTION WITH THE VIOLATIONS OF ANY FEDERAL, STATE, OR LOCAL LAWS OR REGULATIONS (INCLUDING THOSE RELATED TO THE PROVISION OF MEDICAL PROFESSIONAL SERVICES), NEGLIGENCE OR WILLFUL MISCONDUCT OF LICENSEE, ITS AGENTS, EMPLOYEES, REPRESENTATIVES OR CONTRACTORS.  In no event shall Company’s total liability to Licensee for all damages due to the use of the Licensed Application exceed the amount of fifty dollars ($50.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.
+
+5.	TERMINATION
+
+5.1	Term.  The term of this EULA shall commence on the Effective Date and continue so long as the terms and conditions of this EULA are satisfied unless terminated by Company as provided herein.
+
+5.2	Termination.  Company may terminate this EULA immediately: (1) for convenience, (2) in the event of a breach by Licensee of its obligations hereunder, or (3) in the event of the issuance of a final order, decree or other action by any competent judicial authority or governmental agency (e.g. FDA or corresponding foreign regulatory authority in a given country) which restrains, enjoins or prohibits the introduction into interstate commerce of the Licensed Application.  Additionally, Licensee’s rights under this EULA will terminate automatically without notice from Company if Licensee fails to comply with any term(s) of this EULA.
+
+5.3	Licensee Obligations on Termination.  Upon termination of this EULA all licenses granted hereunder shall immediately terminate and Licensee shall cease all use of the Licensed Application, and destroy all copies, full or partial of the Licensed Application.  Sections 2.2-2.6. 5.3, 6.3 and Articles 1, 3, 4, and 6 shall survive the termination or expiration of this EULA.  
+
+6.	GENERAL
+
+6.1	Compliance.  Licensee shall, at its own expense, be responsible for current and ongoing familiarity with, and shall at all times comply with all applicable laws, treaties, rules, regulations, orders and other requirements relating to this EULA. 
+
+6.2	Assignment.  Licensee may not assign this EULA (or any of its rights hereunder), or delegate its obligations hereunder to any other party except in connection with the transfer of System provided that any such assignee agrees in writing to be bound by the terms of this EULA.   
+
+6.3	Amendments .  No modifications or amendments to this EULA shall be binding unless agreed to in writing and signed by Company.  
+
+6.4	Controlling Law and Severability.  This EULA will be governed by the laws of the State of California, excluding its conflict of law principles.  This License shall not be governed by the United Nations Convention on Contracts for the International Sales of Goods, the application of which is expressly excluded.  If any term, provision, covenant or condition of this EULA is found by a court of competent jurisdiction to be invalid, void or unenforceable for any reasons, then such term, provision, covenant or condition shall be adjusted, if possible, in order to achieve the intent of the parties, and if such adjustment is impossible, then such term, provision, covenant or condition shall be deemed to be stricken from this EULA.  In any event, the remainder of this EULA shall remain in full force and effect and shall in no way be affected, impaired or invalidated thereby.
+
+6.5	Notices.  Licensee agrees to receive notices regarding the Licensed Application from Company by email and via the Licensed Application.  Licensee agrees that such notices sent electronically will satisfy any legal communication requirements.
+
+6.6	Entire EULA.  This EULA constitutes the entire understanding and agreement between the parties with respect to the license of Licensed Application contained herein, and supersedes and replaces any prior understanding, agreement or statement, written or oral, with respect to the same. In the event of conflict or inconsistency between the terms stated in a purchase order or other similar document and this EULA with respect to the license of Licensed Application only, the terms and conditions of this EULA shall govern. For clarity, the terms of this EULA replace and supersede in their entirety the terms of any third party end user license agreement, to the extent covering the Licensed Application, entered into by Licensee with Apple, Google or any other third party provider of this Licensed Application.  These terms and conditions will remain applicable and be binding on Licensee even if the acquisition of the System which the Licensed Application is being used together with is financed, including but not limited to a lease transaction with a third party leasing company.  All other agreements between the Licensee and Company not pertaining to the license of Licensed Application remain in full force and effect.  
+
+6.7	Export Restrictions.  Licensee may not use or otherwise export or re-export the Licensed Application except as authorized by United States law and the laws of the jurisdiction in which the Licensed Application was obtained. In particular, but without limitation, the Licensed Application may not be exported or re-exported (a) into any U.S. embargoed countries or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Department of Commerce Denied Person’s List or Entity List. By using the Licensed Application, Licensee represents and warrants that it is not located in any such country or on any such list. Licensee also agrees that it will not use Licensed Application for any purposes prohibited by United States law.
+
+6.8	U.S. Government Rights.  The Licensed Application and related documentation are "Commercial Items", as that term is defined at 48 C.F.R. §2.101, consisting of "Commercial Computer Software" and "Commercial Computer Software Documentation", as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright laws of the United States.
+
+6.7	General.  The captions, section and subsection headings used in this EULA are for purposes of convenience only. They shall not be construed to limit or extend the meaning of any part of this EULA. This EULA is written in the English language as spoken and interpreted in the United States of America, and such language and interpretation shall be controlling in all respects. The words “will” and “shall” when used herein both connote mandatory obligations.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResRob_Logo_Full_ColorTrans.png" id="qDn-Y6-mnp">
-                                <rect key="frame" x="168" y="422" width="408" height="237"/>
+                                <rect key="frame" x="168" y="691" width="408" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -1045,6 +1146,6 @@ Fax:  (408) 883-6889</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bEV-cl-lzs"/>
+        <segue reference="YTU-ge-B88"/>
     </inferredMetricsTieBreakers>
 </document>

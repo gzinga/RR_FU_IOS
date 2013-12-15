@@ -121,6 +121,9 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UITextField TextBoxProtocol { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UITextField TextBoxTotalImplantable { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField TotalTerminalHairs { get; set; }
 
 		[Outlet]
@@ -188,6 +191,11 @@ namespace FUCounter_App
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (TextBoxTotalImplantable != null) {
+				TextBoxTotalImplantable.Dispose ();
+				TextBoxTotalImplantable = null;
+			}
+
 			if (ButtonLoad != null) {
 				ButtonLoad.Dispose ();
 				ButtonLoad = null;
