@@ -42,7 +42,7 @@ namespace FUCounter_App
 			//catch(Exception e)
 			//{
 				//if (e.GetType() ==  System.IO.FileNotFoundException)
-				return;
+			//return;
 			//}
 			//eula = (EULA)reader.Deserialize(file);
 			//file.Close();
@@ -55,7 +55,14 @@ namespace FUCounter_App
 				//View = mainView.View;
 				//UIView.Transition ((UIViewController)this, mainView, 1.0, UIViewAnimationCurve.EaseIn, null);
 			//}
+			textBoxEULA.ScrollAnimationEnded += this.EULAScrolled;
 		}
+
+		public void EULAScrolled (object sender, EventArgs e)
+		{
+
+		}
+
 
 		partial void NotAgreeAction (MonoTouch.Foundation.NSObject sender)
 		{

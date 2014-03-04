@@ -12,6 +12,9 @@ namespace FUCounter_App
 	[Register ("EULAViewController")]
 	partial class EULAViewController
 	{
+		[Outlet]
+		MonoTouch.UIKit.UITextView textBoxEULA { get; set; }
+
 		[Action ("AgreeAction:")]
 		partial void AgreeAction (MonoTouch.Foundation.NSObject sender);
 
@@ -20,6 +23,10 @@ namespace FUCounter_App
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (textBoxEULA != null) {
+				textBoxEULA.Dispose ();
+				textBoxEULA = null;
+			}
 		}
 	}
 }
