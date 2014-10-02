@@ -1,6 +1,6 @@
-# Version: 7.2.0.2 (58c3efa)
+# Version: 8.0.0.63 (58b46df)
 # [first argument, ignore] # /Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/bin/iPhoneSimulator/Debug/mtouch.exe
-/Developer/MonoTouch/usr/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.0.0.63/bin/mtouch \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
@@ -10,17 +10,17 @@
 	-sim \
 	/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/bin/iPhoneSimulator/Debug/RR_FUCounter.app \
 	-r \
-	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
 	-r \
-	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
 	-r \
-	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
 	-r \
-	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
 	-debug \
 	-nolink \
 	-sdk \
-	7.1 \
+	8.0 \
 	-targetver \
 	7.0 \
 	--abi=i386 \

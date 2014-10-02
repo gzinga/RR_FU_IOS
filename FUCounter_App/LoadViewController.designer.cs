@@ -1,10 +1,12 @@
 // WARNING
 //
-// This file has been generated automatically by Xamarin Studio to store outlets and
-// actions made in the UI designer. If it is removed, they will be lost.
-// Manual changes to this file may not be handled correctly.
+// This file has been generated automatically by Xamarin Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
 //
+using System;
 using MonoTouch.Foundation;
+using MonoTouch.UIKit;
 using System.CodeDom.Compiler;
 
 namespace FUCounter_App
@@ -31,45 +33,19 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UITableView TableListFiles { get; set; }
 
 		[Action ("DeleteRecord:")]
-		partial void DeleteRecord (MonoTouch.Foundation.NSObject sender);
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void DeleteRecord (UIButton sender);
 
 		[Action ("GoHome:")]
-		partial void GoHome (MonoTouch.Foundation.NSObject sender);
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void GoHome (UIButton sender);
 
 		[Action ("LoadSelectedRecord:")]
-		partial void LoadSelectedRecord (MonoTouch.Foundation.NSObject sender);
-		
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void LoadSelectedRecord (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
-			if (TableListFiles != null) {
-				TableListFiles.Dispose ();
-				TableListFiles = null;
-			}
-
-			if (LabelPatientID != null) {
-				LabelPatientID.Dispose ();
-				LabelPatientID = null;
-			}
-
-			if (LabelNumGrafts != null) {
-				LabelNumGrafts.Dispose ();
-				LabelNumGrafts = null;
-			}
-
-			if (LabelTXRate != null) {
-				LabelTXRate.Dispose ();
-				LabelTXRate = null;
-			}
-
-			if (LabelDXRate != null) {
-				LabelDXRate.Dispose ();
-				LabelDXRate = null;
-			}
-
-			if (LabelProcedureDate != null) {
-				LabelProcedureDate.Dispose ();
-				LabelProcedureDate = null;
-			}
 		}
 	}
 }

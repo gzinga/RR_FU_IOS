@@ -48,7 +48,7 @@ namespace FUCounter_App
 			ReloadListOfFiles ();
 		}
 
-		partial void LoadSelectedRecord (MonoTouch.Foundation.NSObject sender)
+		partial void LoadSelectedRecord (UIButton sender)
 		{
 			TableSource source = (TableSource)TableListFiles.Source;
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
@@ -97,7 +97,7 @@ namespace FUCounter_App
 
 		}
 
-		partial void GoHome (MonoTouch.Foundation.NSObject sender)
+		partial void GoHome (UIButton sender)
 		{
 			// finds the latest saved file within the day
 
@@ -111,7 +111,7 @@ namespace FUCounter_App
 			((FUCounter_AppViewController)segue.DestinationViewController).SetFileToLoad(FileToLoad);
 		}
 
-		partial void DeleteRecord (MonoTouch.Foundation.NSObject sender)
+		partial void DeleteRecord (UIButton sender)
 		{
 			TableSource source = (TableSource)TableListFiles.Source;
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);

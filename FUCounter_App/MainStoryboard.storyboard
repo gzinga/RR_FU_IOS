@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="i5s-6S-DPK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="i5s-6S-DPK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -130,9 +130,20 @@
                                     <action selector="StepRecordEvent:" destination="kXJ-sH-5W0" eventType="valueChanged" id="xde-u1-2Uo"/>
                                 </connections>
                             </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RbI-UV-Bqm">
+                                <rect key="frame" x="493" y="171" width="47" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Home_02.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" id="gmM-iJ-tDl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3hJ-qh-5kA"/>
                     <connections>
                         <outlet property="StepRecordControl" destination="0jW-pw-0CE" id="TQf-Yy-Udm"/>
                         <outlet property="selectorGroupNumber" destination="Zfn-uc-t8P" id="60Q-YF-nJm"/>
@@ -743,6 +754,9 @@
                                 <rect key="frame" x="654" y="344" width="40" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Edit.png"/>
+                                <connections>
+                                    <segue destination="kXJ-sH-5W0" kind="modal" id="rY0-ht-Gm7"/>
+                                </connections>
                             </button>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="sle-ij-78G">
                                 <rect key="frame" x="654" y="311" width="94" height="29"/>

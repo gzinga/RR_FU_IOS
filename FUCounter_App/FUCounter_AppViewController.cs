@@ -272,13 +272,13 @@ namespace FUCounter_App
 			TotalTransectedHairs.Text = MasterRecord.totalTXHair.ToString();
 		}
 
-		partial void DiscardButtonClick (MonoTouch.Foundation.NSObject sender)
+		partial void DiscardButtonClick (UIButton sender)
 		{
 			DiscardedSwitch.On = true;
 			KeyEnterTouch(null);
 		}
 
-		partial void KeyEnterTouch (MonoTouch.Foundation.NSObject sender)
+		partial void KeyEnterTouch (UIButton sender)
 		{
 			if (redFlegEntry) 
 			{
@@ -424,34 +424,34 @@ namespace FUCounter_App
 
 		}
 
-		partial void Button0Click (MonoTouch.Foundation.NSObject sender)
+		partial void Button0Click (UIButton sender)
 		{
 			RunWorkflow("0");
 
 		}
 
 
-		partial void Button1Click (MonoTouch.Foundation.NSObject sender)
+		partial void Button1Click (UIButton sender)
 		{
 
 			RunWorkflow("1");
 		}
 
 
-		partial void Button2Click (MonoTouch.Foundation.NSObject sender)
+		partial void Button2Click (UIButton sender)
 		{
 
 			RunWorkflow("2");
 		}
 
-		partial void Button3Click (MonoTouch.Foundation.NSObject sender)
+		partial void Button3Click (UIButton sender)
 		{
 			RunWorkflow("3");
 
 		}
 
 
-		partial void Button4Click (MonoTouch.Foundation.NSObject sender)
+		partial void Button4Click (UIButton sender)
 		{
 
 			RunWorkflow("4");
@@ -459,21 +459,21 @@ namespace FUCounter_App
 		}
 
 
-		partial void Button5Click (MonoTouch.Foundation.NSObject sender)
+		partial void Button5Click (UIButton sender)
 		{
 
 			RunWorkflow("5");
 		}
 
 
-		partial void Button6Click (MonoTouch.Foundation.NSObject sender)
+		partial void Button6Click (UIButton sender)
 		{
 
 			RunWorkflow("6");
 		}
 
 
-		partial void SaveRecords (MonoTouch.Foundation.NSObject sender)
+		partial void SaveRecords (UIButton sender)
 		{
 			if (PatientID.Text == string.Empty || TechID.Text == string.Empty)
 			{
@@ -552,7 +552,7 @@ namespace FUCounter_App
 		}
 
 
-		partial void LoadRecords (MonoTouch.Foundation.NSObject sender)
+		partial void LoadRecords (UIButton sender)
 		{
 			/*
 			UpdateTableView(true);
@@ -569,19 +569,19 @@ namespace FUCounter_App
 			*/
 		}
 
-		partial void ClearAll (MonoTouch.Foundation.NSObject sender)
+		partial void ClearAll (UIButton sender)
 		{
 			MasterRecord = new CaseCount();
 			UpdateTableView(true);
 			ResetView ();
 		}
-		partial void PatientIDEditEnd (MonoTouch.Foundation.NSObject sender)
+		partial void PatientIDEditEnd (UITextField sender)
 		{
 			MasterRecord.PatientID = PatientID.Text;
 		}
 
 
-		partial void SaveFUFile (MonoTouch.Foundation.NSObject sender)
+		partial void SaveFUFile (UIButton sender)
 		{
 			// converts master record into FU file
 			FUCounterDataSet FU1 = new FUCounterDataSet(MasterRecord._allRecords.Count);
@@ -655,13 +655,13 @@ namespace FUCounter_App
 
 		}
 
-		partial void TechIDDidEnd (MonoTouch.Foundation.NSObject sender)
+		partial void TechIDDidEnd (UITextField sender)
 		{
 			MasterRecord.TechID = TechID.Text;
 
 		}
 
-		partial void EmailFile (MonoTouch.Foundation.NSObject sender)
+		partial void EmailFile (UIButton sender)
 		{
 			if(MasterRecord.PatientID == string.Empty) 
 			{
@@ -726,7 +726,7 @@ namespace FUCounter_App
 			this.ReloadInputViews ();
 		}
 
-		partial void EditSwitchEvent (MonoTouch.Foundation.NSObject sender)
+		partial void EditSwitchEvent (UISwitch sender)
 		{
 			StepRecordEdit.Enabled = EditSwitchButton.On;
 
@@ -748,7 +748,7 @@ namespace FUCounter_App
 
 		}
 
-		partial void StepRecordEditClick (MonoTouch.Foundation.NSObject sender)
+		partial void StepRecordEditClick (UIStepper sender)
 		{
 			// changes between records
 			if ((int)(StepRecordEdit.Value) == 0) return;

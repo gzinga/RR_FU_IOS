@@ -1,4 +1,5 @@
 mscorlib.dll
 System.dll
-System.Core.dll
 System.Xml.dll
+System.Core.dll
+Mono.Dynamic.Interpreter.dll

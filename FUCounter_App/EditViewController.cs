@@ -15,7 +15,7 @@ namespace FUCounter_App
 		{
 		}
 
-		partial void UndoLast (MonoTouch.Foundation.NSObject sender)
+		partial void UndoLast (UIButton sender)
 		{
 
 		}
@@ -55,7 +55,7 @@ namespace FUCounter_App
 		}
 
 		GraftRecord undoRec = null;
-		partial void TextBoxOkay (MonoTouch.Foundation.NSObject sender)
+		partial void TextBoxOkay (UIButton sender)
 		{
 			undoRec = (GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1];
 			if (undoRec == null)
@@ -68,7 +68,7 @@ namespace FUCounter_App
 
 		}
 
-		partial void StepRecordEvent (MonoTouch.Foundation.NSObject sender)
+		partial void StepRecordEvent (UIStepper sender)
 		{
 
 			GraftRecord rec = (GraftRecord) MasterRecord._allRecords[(int)StepRecordControl.Value-1];

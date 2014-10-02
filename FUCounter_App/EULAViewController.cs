@@ -64,13 +64,13 @@ namespace FUCounter_App
 		}
 
 
-		partial void NotAgreeAction (MonoTouch.Foundation.NSObject sender)
+		partial void NotAgreeAction (UIButton sender)
 		{
 			UIAlertView alert = new UIAlertView ("EULA", "SINCE YOU DID NOT AGREE TO RESTORATION ROBOTICS EULA, YOU WON'T BE ABLE TO USE THIS APP", null, "OK", null);
 			alert.Show();
 		}
 
-		partial void AgreeAction (MonoTouch.Foundation.NSObject sender)
+		partial void AgreeAction (UIButton sender)
 		{
 			//EULA eula = new EULA();
 			//eula.Agreed = true;
