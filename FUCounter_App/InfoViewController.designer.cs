@@ -14,9 +14,6 @@ namespace FUCounter_App
 	[Register ("InfoViewController")]
 	partial class InfoViewController
 	{
-		[Outlet]
-		MonoTouch.UIKit.UIWebView UIWebcontroller { get; set; }
-
 		void ReleaseDesignerOutlets ()
 		{
 		}

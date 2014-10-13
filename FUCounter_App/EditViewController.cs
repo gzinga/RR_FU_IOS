@@ -24,6 +24,8 @@ namespace FUCounter_App
 		{
 			base.ViewDidLoad ();
 			// loads the ui with last record
+			if (MasterRecord == null)
+				return;
 			GraftRecord rec = (GraftRecord) MasterRecord._allRecords [MasterRecord._allRecords.Count - 1];
 			if (rec == null)
 				return;

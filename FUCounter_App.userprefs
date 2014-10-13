@@ -1,8 +1,8 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad2.8.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/FUCounter_AppViewController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.RR iPad" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/InfoViewController.cs">
     <Files>
-      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="16" Column="16" />
+      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="12" Column="12" />
       <File FileName="FUCounter_App/CaseCount.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/GraftRecord.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/LoadViewController.cs" Line="1" Column="1" />
@@ -12,6 +12,8 @@
       <File FileName="FUCounter_App/Main.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/EditViewController.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/EditViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/FUCounterDataSet.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/InfoViewController.cs" Line="4" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -26,7 +28,7 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <AuthorInfo Name="Gabe Zingaretti" Email="gabez@restorationrobotics.com" Copyright="Restoration Robotics" Company="Restoration Robotics" Trademark="" />
-  <MonoDevelop.Ide.ItemProperties.RR__FUCounter>
+  <MonoDevelop.Ide.ItemProperties.Artas_220FU_220Counter>
     <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="M8K8X9UQSG" TeamId="EL299W6TY7" />
-  </MonoDevelop.Ide.ItemProperties.RR__FUCounter>
+  </MonoDevelop.Ide.ItemProperties.Artas_220FU_220Counter>
 </Properties>

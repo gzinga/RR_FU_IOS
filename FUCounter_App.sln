@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RR_FUCounter", "FUCounter_App\RR_FUCounter.csproj", "{0C4B47A9-3F61-4B63-9B28-26EB079BC110}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artas FU Counter", "FUCounter_App\Artas FU Counter.csproj", "{0C4B47A9-3F61-4B63-9B28-26EB079BC110}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +27,6 @@ Global
 		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FUCounter_App\RR_FUCounter.csproj
+		StartupItem = FUCounter_App\Artas FU Counter.csproj
 	EndGlobalSection
 EndGlobal

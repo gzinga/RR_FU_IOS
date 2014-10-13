@@ -13,11 +13,9 @@
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>MinimumOSVersion</key>
-	<string>7.0</string>
+	<string>8.0</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
-	<key>CFBundleDisplayName</key>
-	<string>RR FUCounter</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-76@2x</string>
@@ -28,5 +26,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>CFBundleDisplayName</key>
+	<string>ARTAS Counter</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1</string>
 </dict>
 </plist>

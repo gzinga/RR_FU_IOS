@@ -35,6 +35,7 @@ namespace FUCounter_App
 		public DateTime ProcedureDate{ get; set;}
 		public String Protocol{ get; set;}
 		public String MicroscopicNotes{ get; set;}
+		public String TechID { get; set; }
 	}
 
 	[Serializable]

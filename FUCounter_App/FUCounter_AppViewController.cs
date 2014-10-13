@@ -66,6 +66,8 @@ namespace FUCounter_App
 		public CaseCount MasterRecord;
 		public bool redFlegEntry;
 		private bool firstTime = true;
+		private int ForPublicRelease = 1;
+
 		public FUCounter_AppViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -88,6 +90,16 @@ namespace FUCounter_App
 			base.ViewDidLoad ();
 
 			// Perform any additional setup after loading the view, typically from a nib.
+			if (ForPublicRelease == 1) {
+				LabelProtocol.Hidden = true;
+				TextBoxProtocol.Hidden = true;
+				TextBoxProtocol.Text = "";
+				ArtasButtonLogo.Hidden = false;
+				EditButtonExtraView.Hidden = true;
+				GroupNumber.Hidden = true;
+				GroupNumberLabel.Hidden = true;
+			}
+
 			if (firstTime == false) 
 			{
 				LoadFile (FileToLoad);
@@ -99,8 +111,8 @@ namespace FUCounter_App
 
 		public void ResetView()
 		{
-			ProcedureDate.Text = DateTime.Today.ToString();
-			MasterRecord = new CaseCount (DateTime.Today, PatientID.Text);
+			ProcedureDate.Text = DateTime.Now.ToString();
+			MasterRecord = new CaseCount (DateTime.Now, PatientID.Text);
 			PatientID.Text = "";
 			NewRecord ();
 			F1A.Text = F1T.Text = F2A.Text = F2T.Text = F3A.Text = F3T.Text = F3T.Text = F4T.Text = F4A.Text = "0";
@@ -589,6 +601,7 @@ namespace FUCounter_App
 			FU1.Subject.PatientID = MasterRecord.PatientID;
 			FU1.Subject.ProcedureDate = MasterRecord.Date;
 			FU1.Subject.Protocol = TextBoxProtocol.Text;
+			FU1.Subject.TechID = TechID.Text;
 			int i = 0;
 			foreach (object Group in MasterRecord.AllGroups)
 			{
@@ -644,6 +657,7 @@ namespace FUCounter_App
 				string dateXSD = FU1.Subject.ProcedureDate.ToString ("yyyy-MM-ddTHH:mm:ss+HH:mm");
 				writer.WriteStartElement("Subject");
 				writer.WriteElementString("PatientId ", FU1.Subject.PatientID);
+				writer.WriteElementString("TechId ", FU1.Subject.TechID);
 				writer.WriteElementString("ProcedureDate", dateXSD);
 				writer.WriteElementString("Protocol", FU1.Subject.Protocol);
 				writer.WriteElementString("MicroscopyNotes", FU1.Subject.MicroscopicNotes);
@@ -670,7 +684,14 @@ namespace FUCounter_App
 				return;
 			}
 			MFMailComposeViewController _mailController;
+			try{
 			_mailController = new MFMailComposeViewController ();
+			}
+			catch(Exception e)
+			{
+				UIAlertView alert = new UIAlertView ("You do not have an email account set up", e.Message, null, "OK", null);
+				return;
+			}
 			_mailController.SetToRecipients (new string[]{""});
 			_mailController.SetSubject ("FU File");
 			_mailController.SetMessageBody ("FU File", false);
@@ -690,7 +711,7 @@ namespace FUCounter_App
 			}
 			catch(Exception e)
 			{
-
+				UIAlertView alert = new UIAlertView ("Exception", e.Message, null, "OK", null);
 			}
 		}
 
@@ -699,6 +720,8 @@ namespace FUCounter_App
 			base.PrepareForSegue (segue, sender);
 			string filetoreload = PatientID.Text;
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			if (filetoreload == string.Empty)
+				return;
 			try{
 				((LoadViewController)segue.DestinationViewController).SetHomeButton(doc + "/" + filetoreload + ".xml");
 
@@ -706,7 +729,7 @@ namespace FUCounter_App
 					((LoadViewController)segue.DestinationViewController).SetHomeButton(null);
 				}
 			catch (Exception e) {
-
+				UIAlertView alert = new UIAlertView ("Exception", e.Message, null, "OK", null);
 			}
 
 			//puts master record on edit form
@@ -714,7 +737,7 @@ namespace FUCounter_App
 				((EditViewController)segue.DestinationViewController).SetMasterRecord(ref MasterRecord);
 			}
 			catch(Exception e) {
-
+				UIAlertView alert = new UIAlertView ("Exception", e.Message, null, "OK", null);
 			}
 		}
 

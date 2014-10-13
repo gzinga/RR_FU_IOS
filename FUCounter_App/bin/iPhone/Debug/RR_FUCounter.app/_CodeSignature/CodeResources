@@ -24,10 +24,6 @@
 		<data>
 		fiYqh2Tg9rAiQItq0u664IkcJHU=
 		</data>
-		<key>Assets.car</key>
-		<data>
-		9MSbAlgC43iI22k9DcFj6LnEXtg=
-		</data>
 		<key>ClearAll.jpeg</key>
 		<data>
 		2mgG2O9wXhB79MnmvxwMF3m8IBs=
@@ -50,11 +46,11 @@
 		</data>
 		<key>FUCounter_App.exe</key>
 		<data>
-		hWTDL9F/OIV+R1Y3f7tQsKn04Es=
+		dzB5j5Sdyp68rPE76dt3OX1f35o=
 		</data>
 		<key>FUCounter_App.exe.mdb</key>
 		<data>
-		ZWAhzd941X3vwY9PzQymCIOD1HA=
+		hgM3PAQ/1X/y4bYvHcga40i1gPQ=
 		</data>
 		<key>Home.jpeg</key>
 		<data>
@@ -71,10 +67,6 @@
 		<key>Icon-76@2x.png</key>
 		<data>
 		xQHJSHX8mxjAo2GIMwrnPgaKUbE=
-		</data>
-		<key>LaunchImage-700-568h@2x.png</key>
-		<data>
-		V1VdV48TyrImURVWCaose9yz87E=
 		</data>
 		<key>LoadFile.jpeg</key>
 		<data>
@@ -98,39 +90,51 @@
 		</data>
 		<key>MainStoryboard.storyboardc/2-view-5.nib</key>
 		<data>
-		je6jQnyakjpi/96ucQ3mEwV+78U=
+		e7QmmTm29RGR6LF0jyz7XSso9A0=
 		</data>
 		<key>MainStoryboard.storyboardc/FU APP.nib</key>
 		<data>
-		OBDzSkF9u4+EwKdjkh/uajjVj0w=
+		anUEj5BcWeNo1v+yZricuGSfNCk=
+		</data>
+		<key>MainStoryboard.storyboardc/Info.plist</key>
+		<data>
+		qJisDbFz8jZk/woXDjRJgy2aclI=
 		</data>
 		<key>MainStoryboard.storyboardc/M5Z-xv-9RE-view-xTg-Rw-0KH.nib</key>
 		<data>
-		TySLLSY9oO3qFPNSUQ2htOnVhH8=
+		wbVsuJoKZ5fzkXxMU1QUsCO7UFo=
 		</data>
 		<key>MainStoryboard.storyboardc/Odq-zl-F83-view-uZg-Ys-Lhx.nib</key>
 		<data>
-		fSwBGlE4MqxvFonkOtavRZ8Y65s=
+		seHhdCZloQ2z/nvyLcPhgPq4teE=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-2.nib</key>
 		<data>
-		Ef1XiI5MOIpvRhASD39S3Psfthg=
+		flYeIZNkVWMXjGzAyTZXcAy/bJ4=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-M5Z-xv-9RE.nib</key>
 		<data>
-		rvFFscILhUMdhJgDUeB0oMNnFSk=
+		XkocB8iXDfRYs0vbNAqIu2EbTM4=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-Odq-zl-F83.nib</key>
 		<data>
-		T2UY98YHTbz1/ZAQOCM5gHuJrzo=
+		sgroLQrTpWoiGum9SpKkAER8/QY=
+		</data>
+		<key>MainStoryboard.storyboardc/UIViewController-kXJ-sH-5W0.nib</key>
+		<data>
+		n4d1NzasDZ3V7nmM/Bj6ctVM550=
 		</data>
 		<key>MainStoryboard.storyboardc/i5s-6S-DPK-view-Dmf-F9-35F.nib</key>
 		<data>
-		bxkiQ+OLtN1iy0K0gOCqKSXXQJ0=
+		zlI/Ibt2Zdb9yUsCZKWKik38wAQ=
+		</data>
+		<key>MainStoryboard.storyboardc/kXJ-sH-5W0-view-PrJ-NQ-mG4.nib</key>
+		<data>
+		DaaAEtxsXDYn8HO/pz9LzDIr5eM=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
-		AUQNKAte6FQWujg5i6Ht1NiOOqg=
+		OQcBxavnkMM+X8mBz/K3qWyrKNE=
 		</data>
 		<key>NOTICE</key>
 		<data>
@@ -202,27 +206,27 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		uNjbzScjvjYo7810+mYVi0q39fE=
+		oB2IsmQSEu5XrToN7MmAJDxcnms=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		B96lKONMI/DtpJkX2DDbVe89u1g=
+		WkjuLm6PPI+57U+InnH2NCLj67s=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		2JFsZpelFkLna56uPieNTpijIs8=
+		+ETJCHFEqaj/fD2DisHH14LQ4KY=
 		</data>
 		<key>System.Xml.dll.mdb</key>
 		<data>
-		1XEk58kDuD8a7330q6K9uiY5/WU=
+		o1YmFxege46f96UAqPe1qWkmTw4=
 		</data>
 		<key>System.dll</key>
 		<data>
-		q5FKE8Q28qJeIJvPKz7sLaoNzbQ=
+		kKjJNz2Y6PwuahrOz2cl3alyyeg=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		275okIc3zIVqKicVlr9hSi+Xol4=
+		pdnc1pnnE8L4KlD9Zy3v1k4AjE4=
 		</data>
 		<key>Trash_01.png</key>
 		<data>
@@ -250,7 +254,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		e4u+pfcbgvxD4b1ILql0xg/h7OU=
+		R7dMqySsN55IvXvYx9Ci+vo2tKg=
 		</data>
 		<key>iOS7-Series-2_02.png</key>
 		<data>
@@ -266,19 +270,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		6FSEXI0Ca6V0iyMbUzQt1+/jcD0=
+		wjzx1ED1CmauhfHpD0skQfJxOPk=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		8gZ6j1AEd+TGGIKkvp7GVg4niHs=
+		CWetOltez4zaFYbhy7NmOlggz2g=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		babevsdAxkNm7UJX6z8cFQbJEl8=
+		NFEoMM+jvrYoowKns9uNAKz2wNg=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		VCk6ouCQpcoDerQBRRoWn/ljmP4=
+		WAjo1MqLgv3bnM27l7fcJCpJVnA=
 		</data>
 		<key>return.png</key>
 		<data>
@@ -307,10 +311,6 @@
 		<data>
 		fiYqh2Tg9rAiQItq0u664IkcJHU=
 		</data>
-		<key>Assets.car</key>
-		<data>
-		9MSbAlgC43iI22k9DcFj6LnEXtg=
-		</data>
 		<key>ClearAll.jpeg</key>
 		<data>
 		2mgG2O9wXhB79MnmvxwMF3m8IBs=
@@ -333,11 +333,11 @@
 		</data>
 		<key>FUCounter_App.exe</key>
 		<data>
-		hWTDL9F/OIV+R1Y3f7tQsKn04Es=
+		dzB5j5Sdyp68rPE76dt3OX1f35o=
 		</data>
 		<key>FUCounter_App.exe.mdb</key>
 		<data>
-		ZWAhzd941X3vwY9PzQymCIOD1HA=
+		hgM3PAQ/1X/y4bYvHcga40i1gPQ=
 		</data>
 		<key>Home.jpeg</key>
 		<data>
@@ -354,10 +354,6 @@
 		<key>Icon-76@2x.png</key>
 		<data>
 		xQHJSHX8mxjAo2GIMwrnPgaKUbE=
-		</data>
-		<key>LaunchImage-700-568h@2x.png</key>
-		<data>
-		V1VdV48TyrImURVWCaose9yz87E=
 		</data>
 		<key>LoadFile.jpeg</key>
 		<data>
@@ -381,39 +377,51 @@
 		</data>
 		<key>MainStoryboard.storyboardc/2-view-5.nib</key>
 		<data>
-		je6jQnyakjpi/96ucQ3mEwV+78U=
+		e7QmmTm29RGR6LF0jyz7XSso9A0=
 		</data>
 		<key>MainStoryboard.storyboardc/FU APP.nib</key>
 		<data>
-		OBDzSkF9u4+EwKdjkh/uajjVj0w=
+		anUEj5BcWeNo1v+yZricuGSfNCk=
+		</data>
+		<key>MainStoryboard.storyboardc/Info.plist</key>
+		<data>
+		qJisDbFz8jZk/woXDjRJgy2aclI=
 		</data>
 		<key>MainStoryboard.storyboardc/M5Z-xv-9RE-view-xTg-Rw-0KH.nib</key>
 		<data>
-		TySLLSY9oO3qFPNSUQ2htOnVhH8=
+		wbVsuJoKZ5fzkXxMU1QUsCO7UFo=
 		</data>
 		<key>MainStoryboard.storyboardc/Odq-zl-F83-view-uZg-Ys-Lhx.nib</key>
 		<data>
-		fSwBGlE4MqxvFonkOtavRZ8Y65s=
+		seHhdCZloQ2z/nvyLcPhgPq4teE=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-2.nib</key>
 		<data>
-		Ef1XiI5MOIpvRhASD39S3Psfthg=
+		flYeIZNkVWMXjGzAyTZXcAy/bJ4=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-M5Z-xv-9RE.nib</key>
 		<data>
-		rvFFscILhUMdhJgDUeB0oMNnFSk=
+		XkocB8iXDfRYs0vbNAqIu2EbTM4=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-Odq-zl-F83.nib</key>
 		<data>
-		T2UY98YHTbz1/ZAQOCM5gHuJrzo=
+		sgroLQrTpWoiGum9SpKkAER8/QY=
+		</data>
+		<key>MainStoryboard.storyboardc/UIViewController-kXJ-sH-5W0.nib</key>
+		<data>
+		n4d1NzasDZ3V7nmM/Bj6ctVM550=
 		</data>
 		<key>MainStoryboard.storyboardc/i5s-6S-DPK-view-Dmf-F9-35F.nib</key>
 		<data>
-		bxkiQ+OLtN1iy0K0gOCqKSXXQJ0=
+		zlI/Ibt2Zdb9yUsCZKWKik38wAQ=
+		</data>
+		<key>MainStoryboard.storyboardc/kXJ-sH-5W0-view-PrJ-NQ-mG4.nib</key>
+		<data>
+		DaaAEtxsXDYn8HO/pz9LzDIr5eM=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
-		AUQNKAte6FQWujg5i6Ht1NiOOqg=
+		OQcBxavnkMM+X8mBz/K3qWyrKNE=
 		</data>
 		<key>NOTICE</key>
 		<data>
@@ -485,27 +493,27 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		uNjbzScjvjYo7810+mYVi0q39fE=
+		oB2IsmQSEu5XrToN7MmAJDxcnms=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		B96lKONMI/DtpJkX2DDbVe89u1g=
+		WkjuLm6PPI+57U+InnH2NCLj67s=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		2JFsZpelFkLna56uPieNTpijIs8=
+		+ETJCHFEqaj/fD2DisHH14LQ4KY=
 		</data>
 		<key>System.Xml.dll.mdb</key>
 		<data>
-		1XEk58kDuD8a7330q6K9uiY5/WU=
+		o1YmFxege46f96UAqPe1qWkmTw4=
 		</data>
 		<key>System.dll</key>
 		<data>
-		q5FKE8Q28qJeIJvPKz7sLaoNzbQ=
+		kKjJNz2Y6PwuahrOz2cl3alyyeg=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		275okIc3zIVqKicVlr9hSi+Xol4=
+		pdnc1pnnE8L4KlD9Zy3v1k4AjE4=
 		</data>
 		<key>Trash_01.png</key>
 		<data>
@@ -533,7 +541,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		e4u+pfcbgvxD4b1ILql0xg/h7OU=
+		R7dMqySsN55IvXvYx9Ci+vo2tKg=
 		</data>
 		<key>iOS7-Series-2_02.png</key>
 		<data>
@@ -549,19 +557,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		6FSEXI0Ca6V0iyMbUzQt1+/jcD0=
+		wjzx1ED1CmauhfHpD0skQfJxOPk=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		8gZ6j1AEd+TGGIKkvp7GVg4niHs=
+		CWetOltez4zaFYbhy7NmOlggz2g=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		babevsdAxkNm7UJX6z8cFQbJEl8=
+		NFEoMM+jvrYoowKns9uNAKz2wNg=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		VCk6ouCQpcoDerQBRRoWn/ljmP4=
+		WAjo1MqLgv3bnM27l7fcJCpJVnA=
 		</data>
 		<key>return.png</key>
 		<data>
@@ -572,14 +580,14 @@
 	<dict>
 		<key>.*</key>
 		<true/>
-		<key>Info.plist</key>
+		<key>^Info.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>10</real>
 		</dict>
-		<key>ResourceRules.plist</key>
+		<key>^ResourceRules.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
@@ -591,26 +599,26 @@
 	<dict>
 		<key>.*</key>
 		<true/>
-		<key>Info.plist</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
-		</dict>
-		<key>ResourceRules.plist</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>100</real>
-		</dict>
 		<key>^(Frameworks|SharedFrameworks|Plugins|Plug-ins|XPCServices|Helpers|MacOS)/</key>
 		<dict>
 			<key>nested</key>
 			<true/>
 			<key>weight</key>
 			<real>0.0</real>
+		</dict>
+		<key>^Info.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^ResourceRules.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

@@ -137,6 +137,22 @@ namespace FUCounter_App
 		[Outlet]
 		MonoTouch.UIKit.UITextField TxdTerminalHairCount { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton ArtasButtonLogo { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton EditButtonExtraView { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel GroupNumberLabel { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel LabelProtocol { get; set; }
+
 		[Action ("Button0Click:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void Button0Click (UIButton sender);
@@ -239,6 +255,22 @@ namespace FUCounter_App
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (ArtasButtonLogo != null) {
+				ArtasButtonLogo.Dispose ();
+				ArtasButtonLogo = null;
+			}
+			if (EditButtonExtraView != null) {
+				EditButtonExtraView.Dispose ();
+				EditButtonExtraView = null;
+			}
+			if (GroupNumberLabel != null) {
+				GroupNumberLabel.Dispose ();
+				GroupNumberLabel = null;
+			}
+			if (LabelProtocol != null) {
+				LabelProtocol.Dispose ();
+				LabelProtocol = null;
+			}
 		}
 	}
 }
