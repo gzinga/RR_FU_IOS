@@ -127,9 +127,6 @@
     <Compile Include="RRAdBannerView.designer.cs">
       <DependentUpon>RRAdBannerView.cs</DependentUpon>
     </Compile>
-    <Compile Include="InfoViewController.designer.cs">
-      <DependentUpon>InfoViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="EditViewController.cs" />
     <Compile Include="EditViewController.designer.cs">
       <DependentUpon>EditViewController.cs</DependentUpon>
@@ -138,13 +135,16 @@
     <Compile Include="EditRecordsView.designer.cs">
       <DependentUpon>EditRecordsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIRRInfoController.cs" />
+    <Compile Include="UIRRInfoController.designer.cs">
+      <DependentUpon>UIRRInfoController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
     <InterfaceDefinition Include="Info.plist">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="InfoViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />

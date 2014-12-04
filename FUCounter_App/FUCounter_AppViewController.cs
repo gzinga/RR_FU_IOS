@@ -787,14 +787,17 @@ namespace FUCounter_App
 			GroupNumber.SelectedSegment = rec.GroupNumber -1;
 		}
 
+		UIRRInfoController infoView = null;
 		partial void ButtonInfoDown (UIButton sender)
 		{
-			UIViewController infoView  = new UIViewController("infoViewController",this.NibBundle);
-			infoView.ModalPresentationStyle = UIModalPresentationStyle.Popover;
-
-			//InfoViewController infoView = new InfoViewController();
-			this.PresentViewController (infoView, true, null);
-
+			if (infoView == null)
+			{
+				UIStoryboard storyboard = UIStoryboard.FromName ("MainStoryboard", null);
+				infoView = (UIRRInfoController)storyboard.InstantiateViewController("UIRRInfoController");
+			}
+			infoView.ModalInPopover = true;
+			//AddChildViewController(infoView);
+			PresentViewController(infoView, true, null);
 		}
 	}
 }
