@@ -28,34 +28,40 @@ namespace FUCounter_App
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			//EULA eula = new	EULA ();
-			//var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-			//string fileName = doc + "/RR_EULA.txt";
 
-			//System.Xml.Serialization.XmlSerializer reader = 
-			//	new System.Xml.Serialization.XmlSerializer(typeof(EULA));
-			//System.IO.StreamReader file = null;
-
-			//try{
-			//	file = new System.IO.StreamReader(fileName);
-			//}
-			//catch(Exception e)
-			//{
-				//if (e.GetType() ==  System.IO.FileNotFoundException)
-			//return;
-			//}
-			//eula = (EULA)reader.Deserialize(file);
-			//file.Close();
-			//if (eula.Agreed == true) {
-				// we can skip the EULA and go to the main view
-				//mainView = this.Storyboard.InstantiateViewController (typeof(FUCounter_AppViewController).Name) as FUCounter_AppViewController;
-				//PresentViewController(mainView, false, null); 
-			//	mainView = new FUCounter_AppViewController ();
-			//	PresentViewController(mainView, false, null); 
-				//View = mainView.View;
-				//UIView.Transition ((UIViewController)this, mainView, 1.0, UIViewAnimationCurve.EaseIn, null);
-			//}
 			textBoxEULA.ScrollAnimationEnded += this.EULAScrolled;
+		}
+
+		public override void ViewDidAppear (bool animated)
+		{
+			base.ViewDidAppear (animated);
+
+			//if EULA was previously agreed, do not show it
+			EULA eula = new EULA ();
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			string fileName = doc + "/RR_EULA.txt";
+
+			System.Xml.Serialization.XmlSerializer reader = 
+				new System.Xml.Serialization.XmlSerializer(typeof(EULA));
+			System.IO.StreamReader file = null;
+
+			try{
+				file = new System.IO.StreamReader(fileName);
+			}
+			catch(Exception e)
+			{
+				//if (e.GetType() ==  System.IO.FileNotFoundException)
+				return;
+			}
+			eula = (EULA)reader.Deserialize(file);
+			file.Close();
+
+			if (eula.Agreed == true) {
+			// we can skip the EULA and go to the main view
+				UIStoryboard storyboard = UIStoryboard.FromName ("MainStoryboard", null);
+				mainView = (FUCounter_AppViewController)storyboard.InstantiateViewController("FUCounter_AppViewController");
+				PresentViewController (mainView, true, null);
+			}
 		}
 
 		public void EULAScrolled (object sender, EventArgs e)
@@ -70,21 +76,22 @@ namespace FUCounter_App
 			alert.Show();
 		}
 
-		partial void AgreeAction (UIButton sender)
+		partial void AgreedAction (UIButton sender)
 		{
-			//EULA eula = new EULA();
-			//eula.Agreed = true;
-			//eula.TimeStamp = DateTime.Today;
+			EULA eula = new EULA();
+			eula.Agreed = true;
+			eula.TimeStamp = DateTime.Now;
 			// saves a file with the info
-			//var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-			//string fileName = doc + "/RR_EULA.txt";
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			string fileName = doc + "/RR_EULA.txt";
 
-			//System.Xml.Serialization.XmlSerializer writer = 
-			//	new System.Xml.Serialization.XmlSerializer(typeof(EULA));
+			System.Xml.Serialization.XmlSerializer writer = 
+				new System.Xml.Serialization.XmlSerializer(typeof(EULA));
 
-			//System.IO.StreamWriter file = new System.IO.StreamWriter(fileName);
-			//writer.Serialize(file, eula);
-			//file.Close();
+			System.IO.StreamWriter file = new System.IO.StreamWriter(fileName);
+			writer.Serialize(file, eula);
+			file.Close();
 		}
+			
 	}
 }

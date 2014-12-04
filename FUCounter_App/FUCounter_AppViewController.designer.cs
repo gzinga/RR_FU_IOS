@@ -143,7 +143,15 @@ namespace FUCounter_App
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton ButtonInfo { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton EditButtonExtraView { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView FUCounterMainUI { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -180,6 +188,10 @@ namespace FUCounter_App
 		[Action ("Button6Click:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void Button6Click (UIButton sender);
+
+		[Action ("ButtonInfoDown:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void ButtonInfoDown (UIButton sender);
 
 		[Action ("ClearAll:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -259,9 +271,17 @@ namespace FUCounter_App
 				ArtasButtonLogo.Dispose ();
 				ArtasButtonLogo = null;
 			}
+			if (ButtonInfo != null) {
+				ButtonInfo.Dispose ();
+				ButtonInfo = null;
+			}
 			if (EditButtonExtraView != null) {
 				EditButtonExtraView.Dispose ();
 				EditButtonExtraView = null;
+			}
+			if (FUCounterMainUI != null) {
+				FUCounterMainUI.Dispose ();
+				FUCounterMainUI = null;
 			}
 			if (GroupNumberLabel != null) {
 				GroupNumberLabel.Dispose ();

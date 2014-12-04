@@ -17,9 +17,9 @@ namespace FUCounter_App
 		[Outlet]
 		MonoTouch.UIKit.UITextView textBoxEULA { get; set; }
 
-		[Action ("AgreeAction:")]
+		[Action ("AgreedAction:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void AgreeAction (UIButton sender);
+		partial void AgreedAction (UIButton sender);
 
 		[Action ("NotAgreeAction:")]
 		[GeneratedCode ("iOS Designer", "1.0")]

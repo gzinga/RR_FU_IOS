@@ -786,6 +786,16 @@ namespace FUCounter_App
 			DiscardedSwitch.On = rec.Discard;
 			GroupNumber.SelectedSegment = rec.GroupNumber -1;
 		}
+
+		partial void ButtonInfoDown (UIButton sender)
+		{
+			UIViewController infoView  = new UIViewController("infoViewController",this.NibBundle);
+			infoView.ModalPresentationStyle = UIModalPresentationStyle.Popover;
+
+			//InfoViewController infoView = new InfoViewController();
+			this.PresentViewController (infoView, true, null);
+
+		}
 	}
 }
 

@@ -1,6 +1,0 @@
-/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
-/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/System.dll
-/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/System.Xml.dll
-/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
-/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll
-/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/FUCounter_App.exe

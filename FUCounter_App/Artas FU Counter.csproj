@@ -127,7 +127,6 @@
     <Compile Include="RRAdBannerView.designer.cs">
       <DependentUpon>RRAdBannerView.cs</DependentUpon>
     </Compile>
-    <Compile Include="InfoViewController.cs" />
     <Compile Include="InfoViewController.designer.cs">
       <DependentUpon>InfoViewController.cs</DependentUpon>
     </Compile>
@@ -142,7 +141,10 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
-    <InterfaceDefinition Include="Info.plist" />
+    <InterfaceDefinition Include="Info.plist">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="InfoViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />

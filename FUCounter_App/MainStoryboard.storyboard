@@ -161,7 +161,7 @@
         <!--Counter App View Controller-->
         <scene sceneID="4">
             <objects>
-                <viewController id="2" customClass="FUCounter_AppViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="FUCounter_AppViewController" sceneMemberID="viewController" storyboardIdentifier="FUCounter_AppViewController" restorationIdentifier="FUCounter_AppViewController" title="FU Counter Main">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="MainUI" id="5">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -738,6 +738,7 @@
                                     <segue destination="M5Z-xv-9RE" kind="popover" popoverAnchorView="5YG-0Z-n9q" id="eIN-HZ-npi">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
+                                    <action selector="ButtonInfoDown:" destination="2" id="64" eventType="touchDown"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mj8-Ud-hBy" fixedFrame="YES">
@@ -850,6 +851,8 @@
                         <outlet property="EditButtonExtraView" destination="zIj-ua-O3J" id="name-outlet-zIj-ua-O3J"/>
                         <outlet property="GroupNumberLabel" destination="oNC-en-bwH" id="name-outlet-oNC-en-bwH"/>
                         <outlet property="ArtasButtonLogo" destination="34" id="name-outlet-34"/>
+                        <outlet property="ButtonInfo" destination="5YG-0Z-n9q" id="name-outlet-5YG-0Z-n9q"/>
+                        <outlet property="FUCounterMainUI" destination="5" id="name-outlet-5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -859,7 +862,7 @@
         <!--View Controller - EULA View Controller-->
         <scene sceneID="ZfA-7y-S5C">
             <objects>
-                <viewController storyboardIdentifier="FU APP" title="EULA View Controller" id="i5s-6S-DPK" customClass="EULAViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EULAViewController" title="EULA View Controller" id="i5s-6S-DPK" customClass="EULAViewController" sceneMemberID="viewController" restorationIdentifier="">
                     <view key="view" contentMode="scaleToFill" id="Dmf-F9-35F">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -871,8 +874,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="AgreeAction:" destination="i5s-6S-DPK" eventType="touchUpInside" id="Nzq-Tr-ZtZ"/>
                                     <segue destination="2" kind="modal" id="YTU-ge-B88"/>
+                                    <action selector="AgreedAction:" destination="i5s-6S-DPK" id="103" eventType="touchDown"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rPr-4V-N4Z" fixedFrame="YES">
@@ -999,7 +1002,7 @@ Company is the owner of the ARTAS™ trademark and other trademarks and logos in
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LpF-LY-iO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="973"/>
+            <point key="canvasLocation" x="-145" y="1050"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="Qy4-Dp-gHd">
@@ -1036,8 +1039,7 @@ Fax:  (408) 883-6889</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="512" height="640"/>
-                    <connections>
-                    </connections>
+                    <connections/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="280-1m-b0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
