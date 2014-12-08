@@ -192,6 +192,7 @@
     <BundleResource Include="Resources\3.png" />
     <BundleResource Include="Resources\4.png" />
     <BundleResource Include="Resources\return.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />

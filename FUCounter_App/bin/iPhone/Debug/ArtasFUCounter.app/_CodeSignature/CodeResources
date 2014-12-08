@@ -24,9 +24,17 @@
 		<data>
 		fiYqh2Tg9rAiQItq0u664IkcJHU=
 		</data>
+		<key>AppIcons76x76@2x~ipad.png</key>
+		<data>
+		xQHJSHX8mxjAo2GIMwrnPgaKUbE=
+		</data>
 		<key>ClearAll.jpeg</key>
 		<data>
 		2mgG2O9wXhB79MnmvxwMF3m8IBs=
+		</data>
+		<key>Default-Portrait.png</key>
+		<data>
+		SasZ85DIRspV4XawbOaqttcibt0=
 		</data>
 		<key>Edit.png</key>
 		<data>
@@ -46,11 +54,11 @@
 		</data>
 		<key>FUCounter_App.exe</key>
 		<data>
-		2trzY0no8BeKyHOxPPB6xbyjHyk=
+		KvQRCkdMHS8EOYdRn/PNFFVRbSo=
 		</data>
 		<key>FUCounter_App.exe.mdb</key>
 		<data>
-		lMGscWC8QrhEePA3nsd4P9p59hE=
+		GiW66R6os/4GcA0W4woRBUACdWU=
 		</data>
 		<key>Home.jpeg</key>
 		<data>
@@ -67,6 +75,10 @@
 		<key>Icon-76@2x.png</key>
 		<data>
 		xQHJSHX8mxjAo2GIMwrnPgaKUbE=
+		</data>
+		<key>LaunchImage.jpg</key>
+		<data>
+		pAAzl38qfJG5fnqkkKKesvwHPw4=
 		</data>
 		<key>LoadFile.jpeg</key>
 		<data>
@@ -90,47 +102,47 @@
 		</data>
 		<key>MainStoryboard.storyboardc/134-view-135.nib</key>
 		<data>
-		5jQWBxdzkYl4taQQddFbHxYgtGY=
+		M4KmRLIaznvPTEya0RKSgIglzpw=
 		</data>
 		<key>MainStoryboard.storyboardc/2-view-5.nib</key>
 		<data>
-		p3hxA4l15XqnLs64PvRg+r+S7AM=
+		u4ISPT8Vod16ZT+F0FVXcAufXaU=
 		</data>
 		<key>MainStoryboard.storyboardc/EULAViewController.nib</key>
 		<data>
-		A/3BrXrCtP654aIUM+mfCYEnOJ4=
+		SVh096NKLTEIfGyV3zCWUq3ve/0=
 		</data>
 		<key>MainStoryboard.storyboardc/FUCounter_AppViewController.nib</key>
 		<data>
-		rnfTuzuJgONAJVwkWgXPFNRcq4k=
+		4Ka7iONXE3LpEye15+KuabMTRAk=
 		</data>
 		<key>MainStoryboard.storyboardc/Odq-zl-F83-view-uZg-Ys-Lhx.nib</key>
 		<data>
-		upoKTQpE6jKLLoPRYCD2ZydUT24=
+		FsJ28vjyiG2s55DLT3XSsO9H9Yc=
 		</data>
 		<key>MainStoryboard.storyboardc/UIRRInfoController.nib</key>
 		<data>
-		tgA7VM5t7Bh0ILH24UUPFPHMDKs=
+		Y7RJbL2azZHc1RBuLjdR03+3t+0=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-Odq-zl-F83.nib</key>
 		<data>
-		+N6HhPRyoAoz63/vY4N1wdfjXgk=
+		BURCnpxMusjm89hTg23aD4Gkakk=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-kXJ-sH-5W0.nib</key>
 		<data>
-		Oh6gpfIta1KPaENe/3r0YOzEYfU=
+		hJdNsx4vFPCsJ06FaBud/6iZlcQ=
 		</data>
 		<key>MainStoryboard.storyboardc/i5s-6S-DPK-view-Dmf-F9-35F.nib</key>
 		<data>
-		ecE7MVhS7LRgGcLh0sfa80al0bg=
+		IgJcFvsx0X2QJKGZ3TaJtq2C2p4=
 		</data>
 		<key>MainStoryboard.storyboardc/kXJ-sH-5W0-view-PrJ-NQ-mG4.nib</key>
 		<data>
-		V6sMFd3X9ItBv6NJ7L/4Z3vnYxo=
+		6pc+uB8CabDt3XuuMwFTG03oXIg=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
-		JrBQHlI/7fN88mzNwXmcZ9mMTJ8=
+		u7GZH/qwOS1UBBunTHZMnNQaKio=
 		</data>
 		<key>NOTICE</key>
 		<data>
@@ -202,27 +214,27 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		lZZ/hFt9id33UBi0CfJpIDCBlqs=
+		acIauiAlIR0FeLFBVq0DNXwL3S8=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		1Tq/K7g1zujp9Oqy1CinhVZqbBM=
+		b3EeFwSCBvVsU40Yg1mCaCfbIpM=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		/7/YE5R0jqMWAApdED4K96MEf7k=
+		bP0WjRvQmwyMz9jxT4EZMBQ5S3g=
 		</data>
 		<key>System.Xml.dll.mdb</key>
 		<data>
-		U8xWzG43cf94M631HlRGGrPH65o=
+		yyDWeJYg79X1e4W844x9z0YExiU=
 		</data>
 		<key>System.dll</key>
 		<data>
-		8JB8fBDkSO6uoSSSKmOMg6Ccquo=
+		6AI/8oJkG8dDxQqSINwQGotK+/M=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		Qux4xy10tSU7PEeRd50dRZ0NUTk=
+		ltvh4A+UqikkM6AoKZJywG4BUjQ=
 		</data>
 		<key>Trash_01.png</key>
 		<data>
@@ -250,7 +262,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		7gVi048iGV/L5d+aryeo3ogHq1M=
+		6XUXuA1riTzh6BTbjgXGmd67Bgs=
 		</data>
 		<key>iOS7-Series-2_02.png</key>
 		<data>
@@ -266,19 +278,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		g24e61OeddcIr6ho6BLu0sCtI5w=
+		w7zFvTuBuwejoxEFRaPHtHhdO7A=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		JGipToLv3hEsMD0x02fSlGO7CV8=
+		LdT3ocyoKVXQAcDbsXxIHrq6eso=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		vyGMC3CeblymAh81eFs2HW4OZfo=
+		TD0Npky9+r/0LIbvSwZcMgpq+J8=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		OscFQjWj9vnkbOaPiACXE4Ejg5M=
+		jWFD1ZSWDI3m2fPUb5Wd7TepcjY=
 		</data>
 		<key>return.png</key>
 		<data>
@@ -307,9 +319,17 @@
 		<data>
 		fiYqh2Tg9rAiQItq0u664IkcJHU=
 		</data>
+		<key>AppIcons76x76@2x~ipad.png</key>
+		<data>
+		xQHJSHX8mxjAo2GIMwrnPgaKUbE=
+		</data>
 		<key>ClearAll.jpeg</key>
 		<data>
 		2mgG2O9wXhB79MnmvxwMF3m8IBs=
+		</data>
+		<key>Default-Portrait.png</key>
+		<data>
+		SasZ85DIRspV4XawbOaqttcibt0=
 		</data>
 		<key>Edit.png</key>
 		<data>
@@ -329,11 +349,11 @@
 		</data>
 		<key>FUCounter_App.exe</key>
 		<data>
-		2trzY0no8BeKyHOxPPB6xbyjHyk=
+		KvQRCkdMHS8EOYdRn/PNFFVRbSo=
 		</data>
 		<key>FUCounter_App.exe.mdb</key>
 		<data>
-		lMGscWC8QrhEePA3nsd4P9p59hE=
+		GiW66R6os/4GcA0W4woRBUACdWU=
 		</data>
 		<key>Home.jpeg</key>
 		<data>
@@ -350,6 +370,10 @@
 		<key>Icon-76@2x.png</key>
 		<data>
 		xQHJSHX8mxjAo2GIMwrnPgaKUbE=
+		</data>
+		<key>LaunchImage.jpg</key>
+		<data>
+		pAAzl38qfJG5fnqkkKKesvwHPw4=
 		</data>
 		<key>LoadFile.jpeg</key>
 		<data>
@@ -373,47 +397,47 @@
 		</data>
 		<key>MainStoryboard.storyboardc/134-view-135.nib</key>
 		<data>
-		5jQWBxdzkYl4taQQddFbHxYgtGY=
+		M4KmRLIaznvPTEya0RKSgIglzpw=
 		</data>
 		<key>MainStoryboard.storyboardc/2-view-5.nib</key>
 		<data>
-		p3hxA4l15XqnLs64PvRg+r+S7AM=
+		u4ISPT8Vod16ZT+F0FVXcAufXaU=
 		</data>
 		<key>MainStoryboard.storyboardc/EULAViewController.nib</key>
 		<data>
-		A/3BrXrCtP654aIUM+mfCYEnOJ4=
+		SVh096NKLTEIfGyV3zCWUq3ve/0=
 		</data>
 		<key>MainStoryboard.storyboardc/FUCounter_AppViewController.nib</key>
 		<data>
-		rnfTuzuJgONAJVwkWgXPFNRcq4k=
+		4Ka7iONXE3LpEye15+KuabMTRAk=
 		</data>
 		<key>MainStoryboard.storyboardc/Odq-zl-F83-view-uZg-Ys-Lhx.nib</key>
 		<data>
-		upoKTQpE6jKLLoPRYCD2ZydUT24=
+		FsJ28vjyiG2s55DLT3XSsO9H9Yc=
 		</data>
 		<key>MainStoryboard.storyboardc/UIRRInfoController.nib</key>
 		<data>
-		tgA7VM5t7Bh0ILH24UUPFPHMDKs=
+		Y7RJbL2azZHc1RBuLjdR03+3t+0=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-Odq-zl-F83.nib</key>
 		<data>
-		+N6HhPRyoAoz63/vY4N1wdfjXgk=
+		BURCnpxMusjm89hTg23aD4Gkakk=
 		</data>
 		<key>MainStoryboard.storyboardc/UIViewController-kXJ-sH-5W0.nib</key>
 		<data>
-		Oh6gpfIta1KPaENe/3r0YOzEYfU=
+		hJdNsx4vFPCsJ06FaBud/6iZlcQ=
 		</data>
 		<key>MainStoryboard.storyboardc/i5s-6S-DPK-view-Dmf-F9-35F.nib</key>
 		<data>
-		ecE7MVhS7LRgGcLh0sfa80al0bg=
+		IgJcFvsx0X2QJKGZ3TaJtq2C2p4=
 		</data>
 		<key>MainStoryboard.storyboardc/kXJ-sH-5W0-view-PrJ-NQ-mG4.nib</key>
 		<data>
-		V6sMFd3X9ItBv6NJ7L/4Z3vnYxo=
+		6pc+uB8CabDt3XuuMwFTG03oXIg=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
-		JrBQHlI/7fN88mzNwXmcZ9mMTJ8=
+		u7GZH/qwOS1UBBunTHZMnNQaKio=
 		</data>
 		<key>NOTICE</key>
 		<data>
@@ -485,27 +509,27 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		lZZ/hFt9id33UBi0CfJpIDCBlqs=
+		acIauiAlIR0FeLFBVq0DNXwL3S8=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		1Tq/K7g1zujp9Oqy1CinhVZqbBM=
+		b3EeFwSCBvVsU40Yg1mCaCfbIpM=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		/7/YE5R0jqMWAApdED4K96MEf7k=
+		bP0WjRvQmwyMz9jxT4EZMBQ5S3g=
 		</data>
 		<key>System.Xml.dll.mdb</key>
 		<data>
-		U8xWzG43cf94M631HlRGGrPH65o=
+		yyDWeJYg79X1e4W844x9z0YExiU=
 		</data>
 		<key>System.dll</key>
 		<data>
-		8JB8fBDkSO6uoSSSKmOMg6Ccquo=
+		6AI/8oJkG8dDxQqSINwQGotK+/M=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		Qux4xy10tSU7PEeRd50dRZ0NUTk=
+		ltvh4A+UqikkM6AoKZJywG4BUjQ=
 		</data>
 		<key>Trash_01.png</key>
 		<data>
@@ -533,7 +557,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		7gVi048iGV/L5d+aryeo3ogHq1M=
+		6XUXuA1riTzh6BTbjgXGmd67Bgs=
 		</data>
 		<key>iOS7-Series-2_02.png</key>
 		<data>
@@ -549,19 +573,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		g24e61OeddcIr6ho6BLu0sCtI5w=
+		w7zFvTuBuwejoxEFRaPHtHhdO7A=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		JGipToLv3hEsMD0x02fSlGO7CV8=
+		LdT3ocyoKVXQAcDbsXxIHrq6eso=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		vyGMC3CeblymAh81eFs2HW4OZfo=
+		TD0Npky9+r/0LIbvSwZcMgpq+J8=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		OscFQjWj9vnkbOaPiACXE4Ejg5M=
+		jWFD1ZSWDI3m2fPUb5Wd7TepcjY=
 		</data>
 		<key>return.png</key>
 		<data>

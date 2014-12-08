@@ -724,7 +724,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResRob_Logo_Symbol_ColorTrans.png" id="LNd-RL-zP8" fixedFrame="YES">
-                                <rect key="frame" x="605" y="865" width="150" height="150"/>
+                                <rect key="frame" x="627" y="888" width="128" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="5YG-0Z-n9q" fixedFrame="YES">
@@ -771,7 +771,7 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="epM-uX-Gra" fixedFrame="YES">
-                                <rect key="frame" x="685" y="778" width="70" height="70"/>
+                                <rect key="frame" x="600" y="797" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Trash_03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1181,6 +1181,7 @@ Company is the owner of the ARTAS™ trademark and other trademarks and logos in
         <image name="See_FIles_03.png" width="512" height="512"/>
         <image name="iOS7-Series-3_30.png" width="512" height="512"/>
         <image name="iOS7-Series-3_36.png" width="512" height="512"/>
+        <image name="Default-Portrait.png" width="768" height="1024"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -56,6 +56,12 @@ namespace FUCounter_App
 			eula = (EULA)reader.Deserialize(file);
 			file.Close();
 
+			// has it been a while since I saw the EULA
+			TimeSpan deltaMonth = DateTime.Today.Subtract(eula.TimeStamp);
+			if (deltaMonth.Days> 10) {
+				return;
+			}
+
 			if (eula.Agreed == true) {
 			// we can skip the EULA and go to the main view
 				UIStoryboard storyboard = UIStoryboard.FromName ("MainStoryboard", null);

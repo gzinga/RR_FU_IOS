@@ -13,7 +13,7 @@
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>MinimumOSVersion</key>
-	<string>8.0</string>
+	<string>8.1</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
 	<key>CFBundleIconFiles</key>
