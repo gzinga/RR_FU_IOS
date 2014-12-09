@@ -34,8 +34,8 @@ namespace FUCounter_App
 
 		public override void ViewDidAppear (bool animated)
 		{
-			base.ViewDidAppear (animated);
-
+			base.ViewDidAppear (animated);    
+			  
 			//if EULA was previously agreed, do not show it
 			EULA eula = new EULA ();
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
@@ -58,7 +58,7 @@ namespace FUCounter_App
 
 			// has it been a while since I saw the EULA
 			TimeSpan deltaMonth = DateTime.Today.Subtract(eula.TimeStamp);
-			if (deltaMonth.Days> 10) {
+			if (deltaMonth.Days> 17) {
 				return;
 			}
 

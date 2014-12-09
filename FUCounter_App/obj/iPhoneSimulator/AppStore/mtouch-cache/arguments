@@ -1,0 +1,26 @@
+# Version: 8.4.0.43 (840a925)
+# [first argument, ignore] # /Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/bin/iPhoneSimulator/AppStore/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.4.0.43/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/obj/iPhoneSimulator/AppStore/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/bin/iPhoneSimulator/AppStore/ArtasFUCounter.app \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-nolink \
+	-sdk \
+	8.1 \
+	-targetver \
+	8.1 \
+	--abi=i386 \
+	/Users/gabrielezingaretti/Documents/Development/RR_FU_IOS/FUCounter_App/bin/iPhoneSimulator/AppStore/ArtasFUCounter.exe \

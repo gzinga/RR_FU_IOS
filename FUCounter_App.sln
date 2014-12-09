@@ -9,14 +9,14 @@ Global
 		Release|iPhoneSimulator = Release|iPhoneSimulator
 		Debug|iPhone = Debug|iPhone
 		Release|iPhone = Release|iPhone
-		Ad-Hoc|iPhone = Ad-Hoc|iPhone
 		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
 		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.Debug|iPhone.Build.0 = Debug|iPhone
 		{0C4B47A9-3F61-4B63-9B28-26EB079BC110}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
@@ -28,5 +28,7 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = FUCounter_App\Artas FU Counter.csproj
+		description = Artas Counter
+		version = 1.0
 	EndGlobalSection
 EndGlobal
